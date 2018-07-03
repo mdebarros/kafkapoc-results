@@ -9,7 +9,7 @@ Result store: [https://github.com/mdebarros/kafkapoc-results](https://github.com
 
 ### Comsumer Metrics:
 Metric | Component | Description |
----------------------------------------------   | ----------------------------------------  | ----------------------------------------------------  |
+| --- | --- | --- |
 metricConsumeProcessingTime                     | Common Streaming Lib - kafka/consumer.js  | Total processing time for the main Consume method     |
 metricConsumeRecursiveConsumeProcessingTime     | Common Streaming Lib - kafka/consumer.js  | Processing time for the sub Recursive Consume call-back method  |
 metricConsumeRecursiveProcessingTime            | Common Streaming Lib - kafka/consumer.js  | Total processing time for the sub Recursive Consume method |
@@ -26,7 +26,7 @@ metricTimeDiffFromMessageSendToEnd              | KafkaPoc - consumers.js       
 
 ## Selection of Collected results
 Metric | Component | Description |
----------------------------------------------   | ----------------------------------------  | ----------------------------------------------------  |
+| --- | --- | --- |
 metricProducerConnectProcessingTime             | Common Streaming Lib - kafka/producer.js  | Time for Producer to connect                          |
 metricProducerSendMessageProcessingTim          | Common Streaming Lib - kafka/producer.js  | Total processing time for sending a message           |
 
