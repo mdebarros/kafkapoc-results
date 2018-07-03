@@ -1,6 +1,8 @@
 # kafkapoc-results
 
-Results based on the following project: [https://github.com/mdebarros/kafkapoc](https://github.com/mdebarros/kafkapoc)
+Results based on the following projects: 
+- [https://github.com/mdebarros/kafkapoc](https://github.com/mdebarros/kafkapoc)
+- [https://github.com/mdebarros/central-services-shared](https://github.com/mdebarros/central-services-shared/tree/feature/perfAnalysis) _(branch *perfAnalysis*)_
 
 ## Performance Results Collected
 Result store: [https://github.com/mdebarros/kafkapoc-results](https://github.com/mdebarros/kafkapoc-results)

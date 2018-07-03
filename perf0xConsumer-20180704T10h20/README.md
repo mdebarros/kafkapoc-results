@@ -31,7 +31,7 @@ Analysis:
 - These above two metrics point to the processing time being spend within the underlying dependencies.
 
 #### Findings:
-- All Performance analyses point towards a bottleneck within the C++ dependencies
+- Minimal performance issues are seen on the Javascript layer, with indications showing possible issues within the C++ dependencies.
 
 #### Recommendation:
 - Tweak Consumer by testing different configurations for the Common Streaming Library and librdkafka to determine if there can be any performance gains had.
