@@ -2,7 +2,7 @@
 
 [README](../README.md)
 
-#### Config
+#### Config:
 
 - [Env Vars](./perfEnv.sh)
 - [Config](./config.json)
