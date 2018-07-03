@@ -4,7 +4,8 @@
 
 #### Config
 
-Ref
+- [Env Vars](./perfEnv.sh)
+- [Config](./config.json)
 
 #### Flamegraph using 0x:
 Ref: [flamegraph.html](./flamegraph.html)
