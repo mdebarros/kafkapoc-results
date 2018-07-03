@@ -42,6 +42,6 @@ Result store: [https://github.com/mdebarros/kafkapoc-results](https://github.com
 
 | Tables        | Are           | Cool  |
 | ------------- | ------------- | ----- |
-| col 3 is      | right-aligned | $1600 |
+| metricConsumeProcessingTime | Common Streaming Lib - kafka/consumer.js | Total processing time for the main Consume method |
 | col 2 is      | centered      |   $12 |
 | zebra stripes | are neat      |    $1 |
