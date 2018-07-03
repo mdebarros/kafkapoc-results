@@ -5,9 +5,21 @@ Results based on the following project: [https://github.com/mdebarros/kafkapoc](
 ## Performance Results Collected
 Result store: [https://github.com/mdebarros/kafkapoc-results](https://github.com/mdebarros/kafkapoc-results)
 
-## Per4js Metrics Collected
+## Selection of Collected results
 
-### Comsumer Metrics:
+### 20180704T10h00:
+- Sync disabled
+- [Consumer Analysis](./perf0xConsumer-20180704T10h00/README.md)
+- [Producer Analysis](./perf0xProducer-20180704T10h00/README.md)
+
+### 20180704T10h20:
+- Sync enabled
+- [Consumer Analysis](./perf0xConsumer-20180704T10h20/README.md)
+- [Producer Analysis](./perf0xProducer-20180704T10h20/README.md)
+
+## Description of Perf4js Metrics Collected
+
+### Consumer Metrics:
 
 | Metric        | Component           | Description  |
 | ------------- | ------------- | ----- |
@@ -25,19 +37,7 @@ Result store: [https://github.com/mdebarros/kafkapoc-results](https://github.com
 
 ### Producer Metrics:
 
-## Selection of Collected results
-
 | Metric | Component | Description |
 | --- | --- | --- |
 | metricProducerConnectProcessingTime | Common Streaming Lib - kafka/producer.js | Time for Producer to connect |
 | metricProducerSendMessageProcessingTim | Common Streaming Lib - kafka/producer.js | Total processing time for sending a message |
-
-### 20180704T10h00:
-- Sync disabled
-- [Consumer Analysis](./perf0xConsumer-20180704T10h00/README.md)
-- [Producer Analysis](./perf0xProducer-20180704T10h00/README.md)
-
-### 20180704T10h20:
-- Sync enabled
-- [Consumer Analysis](./perf0xConsumer-20180704T10h20/README.md)
-- [Producer Analysis](./perf0xProducer-20180704T10h20/README.md)
