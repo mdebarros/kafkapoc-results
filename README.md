@@ -8,7 +8,7 @@ Result store: [https://github.com/mdebarros/kafkapoc-results](https://github.com
 ## Per4js Metrics Collected
 
 ### Comsumer Metrics:
-Metric | Component | Description |
+| Metric | Component | Description |
 | --- | --- | --- |
 | metricConsumeProcessingTime | Common Streaming Lib - kafka/consumer.js | Total processing time for the main Consume method |
 | metricConsumeRecursiveConsumeProcessingTime | Common Streaming Lib - kafka/consumer.js | Processing time for the sub Recursive Consume call-back method |
@@ -25,7 +25,7 @@ Metric | Component | Description |
 ### Producer Metrics:
 
 ## Selection of Collected results
-Metric | Component | Description |
+| Metric | Component | Description |
 | --- | --- | --- |
 | metricProducerConnectProcessingTime | Common Streaming Lib - kafka/producer.js | Time for Producer to connect |
 | metricProducerSendMessageProcessingTim | Common Streaming Lib - kafka/producer.js | Total processing time for sending a message |
@@ -41,7 +41,7 @@ Metric | Component | Description |
 - [Producer Analysis](./perf0xProducer-20180704T10h20/README.md)
 
 | Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
+| ------------- | ------------- | ----- |
 | col 3 is      | right-aligned | $1600 |
 | col 2 is      | centered      |   $12 |
 | zebra stripes | are neat      |    $1 |
