@@ -1,0 +1,5 @@
+Performance Statistics   2018-07-03 10:00:00 - 2018-07-03 10:15:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+metricProducerConnectProcessingTime                     23.0          23          23         0.0           1
+metricProducerSendMessageProcessingTime                  0.1           0           2         0.3         500
+
