@@ -42,4 +42,4 @@ Result store: [https://github.com/mdebarros/kafkapoc-results](https://github.com
 | Metric | Component | Description |
 | --- | --- | --- |
 | metricProducerConnectProcessingTime | Common Streaming Lib - kafka/producer.js | Time for Producer to connect |
-| metricProducerSendMessageProcessingTim | Common Streaming Lib - kafka/producer.js | Total processing time for sending a message |
+| metricProducerSendMessageProcessingTime | Common Streaming Lib - kafka/producer.js | Total processing time for sending a message |
