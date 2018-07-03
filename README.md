@@ -39,3 +39,9 @@ Metric | Component | Description |
 - Sync enabled
 - [Consumer Analysis](./perf0xConsumer-20180704T10h20/README.md)
 - [Producer Analysis](./perf0xProducer-20180704T10h20/README.md)
+
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
