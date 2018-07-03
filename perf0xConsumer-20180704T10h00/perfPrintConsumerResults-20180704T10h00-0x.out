@@ -1,0 +1,12 @@
+Performance Statistics   2018-07-03 10:00:00 - 2018-07-03 10:15:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+metricConsumeProcessingTime                              2.0           2           2         0.0           1
+metricConsumeRecursiveConsumeProcessingTime              0.6           0          15         1.0         500
+metricConsumeRecursiveProcessingTime                     0.0           0           1         0.2         519
+metricConsumerConnectProcessingTime                     36.0          36          36         0.0           1
+metricEndOfCallBack                                      0.3           0          14         0.9         500
+metricOfPerfObsCallBackConsumerFunction                  0.1           0          14         0.8         500
+metricTimeDiffFromDropoffToEnd                        1141.2        1007        1247        67.2         500
+metricTimeDiffFromMessageSendToDropoff                   0.2           0          12         0.6         500
+metricTimeDiffFromMessageSendToEnd                    1141.4        1011        1247        67.2         500
+
