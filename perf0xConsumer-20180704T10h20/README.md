@@ -4,6 +4,7 @@
 
 #### Config:
 
+- Sync Enabled
 - [Env Vars](./perfEnv.sh)
 - [Config](./config.json)
 
