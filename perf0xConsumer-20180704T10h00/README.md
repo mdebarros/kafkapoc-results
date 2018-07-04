@@ -4,7 +4,7 @@
 
 #### Config:
 
-- Sync Disabled
+- Sync Disabled for Consumers
 - [Env Vars](./perfEnv.sh)
 - [Config](./config.json)
 

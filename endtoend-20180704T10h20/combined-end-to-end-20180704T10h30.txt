@@ -1,0 +1,9 @@
+First request: 2018-07-04T17:29:45.361Z
+Last request: 2018-07-04T17:31:13.145Z
+Total number of lines in log file: 2000
+Number of unique matched entries: 1000
+Total difference of all requests in seconds: 87.784
+Shortest response time in second: 1.029
+Longest response time in second: 87.299
+The average transaction in second: 37.481976
+Average transactions per second: 11.391597557641482

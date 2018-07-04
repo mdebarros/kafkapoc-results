@@ -1,0 +1,583 @@
+Statistical profiling result from isolate-0x105801400-v8.log, (1072 ticks, 104 unaccounted, 0 excluded).
+
+ [Shared libraries]:
+   ticks  total  nonlib   name
+     11    1.0%          /usr/lib/system/libsystem_pthread.dylib
+      3    0.3%          /usr/lib/system/libsystem_malloc.dylib
+      2    0.2%          /usr/lib/system/libsystem_c.dylib
+      1    0.1%          /usr/lib/system/libsystem_platform.dylib
+      1    0.1%          /usr/lib/system/libdyld.dylib
+
+ [JavaScript]:
+   ticks  total  nonlib   name
+     15    1.4%    1.4%  Function: ~runProducer /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/kafkaPoc/producers.js:10:19
+     13    1.2%    1.2%  Function: ~exports.log /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/node_modules/winston/lib/winston/common.js:140:24
+      9    0.8%    0.9%  Builtin: CallFunction_ReceiverIsAny
+      8    0.7%    0.8%  Builtin: InterpreterEntryTrampoline
+      7    0.7%    0.7%  Function: ~derez /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/node_modules/cycle/cycle.js:46:27
+      5    0.5%    0.5%  Function: ~byteLength buffer.js:475:20
+      5    0.5%    0.5%  Function: ~Console.log /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/node_modules/winston/lib/winston/transports/console.js:91:34
+      4    0.4%    0.4%  Function: ~fromString buffer.js:298:20
+      4    0.4%    0.4%  Function: ~Uint8Array native typedarray.js:158:31
+      3    0.3%    0.3%  Stub: CEntryStub {1}
+      3    0.3%    0.3%  StoreIC: A store IC from the snapshot
+      3    0.3%    0.3%  Function: ~Logger.log /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/node_modules/winston/lib/winston/logger.js:109:33
+      3    0.3%    0.3%  Function: ~Buffer.write buffer.js:855:34
+      3    0.3%    0.3%  Builtin: ArgumentsAdaptorTrampoline
+      2    0.2%    0.2%  Stub: StringAddStub
+      2    0.2%    0.2%  Stub: RecordWriteStub {3}
+      2    0.2%    0.2%  Stub: CallICStub
+      2    0.2%    0.2%  KeyedLoadIC: A keyed load IC from the snapshot
+      2    0.2%    0.2%  Function: ~writeOrBuffer _stream_writable.js:339:23
+      2    0.2%    0.2%  Function: ~target.(anonymous function) /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/node_modules/winston/lib/winston/common.js:51:30
+      2    0.2%    0.2%  Function: ~nextTick internal/process/next_tick.js:245:20
+      2    0.2%    0.2%  Function: ~match native string.js:12:6
+      2    0.2%    0.2%  Function: ~exports.clone /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/node_modules/winston/lib/winston/common.js:79:26
+      2    0.2%    0.2%  Function: ~emit events.js:156:44
+      2    0.2%    0.2%  Function: ~config.colorize /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/node_modules/winston/lib/winston/config.js:21:28
+      2    0.2%    0.2%  Function: ~applyStyle /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/node_modules/colors/lib/colors.js:89:20
+      2    0.2%    0.2%  Function: ~Writable.write _stream_writable.js:264:36
+      2    0.2%    0.2%  Function: ~<anonymous> /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/node_modules/winston/lib/winston/logger.js:152:45
+      2    0.2%    0.2%  Builtin: FastNewClosure
+      2    0.2%    0.2%  Builtin: Call_ReceiverIsAny
+      2    0.2%    0.2%  Builtin: CallWithArrayLike
+      1    0.1%    0.1%  Stub: RecordWriteStub {4}
+      1    0.1%    0.1%  Stub: RecordWriteStub {2}
+      1    0.1%    0.1%  Stub: RecordWriteStub {1}
+      1    0.1%    0.1%  Stub: RecordWriteStub
+      1    0.1%    0.1%  Stub: GetPropertyStub
+      1    0.1%    0.1%  Stub: CEntryStub
+      1    0.1%    0.1%  RegExp: \\s
+      1    0.1%    0.1%  RegExp: %[sdj%]
+      1    0.1%    0.1%  LazyCompile: *target.(anonymous function) /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/node_modules/winston/lib/winston/common.js:51:30
+      1    0.1%    0.1%  LazyCompile: *sendMessage /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/src/kafka/producer.js:281:21
+      1    0.1%    0.1%  LazyCompile: *onwrite _stream_writable.js:422:17
+      1    0.1%    0.1%  LazyCompile: *emit events.js:156:44
+      1    0.1%    0.1%  LazyCompile: *decodeChunk _stream_writable.js:327:21
+      1    0.1%    0.1%  LazyCompile: *Logger.log /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/node_modules/winston/lib/winston/logger.js:109:33
+      1    0.1%    0.1%  KeyedStoreIC: A keyed store IC from the snapshot
+      1    0.1%    0.1%  Function: ~validChunk _stream_writable.js:245:20
+      1    0.1%    0.1%  Function: ~stat module.js:50:14
+      1    0.1%    0.1%  Function: ~onwriteStateUpdate _stream_writable.js:415:28
+      1    0.1%    0.1%  Function: ~normalizeStringPosix path.js:106:30
+      1    0.1%    0.1%  Function: ~isUint8Array internal/util/types.js:28:22
+      1    0.1%    0.1%  Function: ~getStdout internal/process/stdio.js:12:21
+      1    0.1%    0.1%  Function: ~fs.writeSync fs.js:727:24
+      1    0.1%    0.1%  Function: ~exports.timestamp /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/node_modules/winston/lib/winston/common.js:307:30
+      1    0.1%    0.1%  Function: ~done /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/node_modules/winston/node_modules/async/lib/async.js:159:22
+      1    0.1%    0.1%  Function: ~doWrite _stream_writable.js:379:17
+      1    0.1%    0.1%  Function: ~dirname path.js:1358:28
+      1    0.1%    0.1%  Function: ~decycle /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/node_modules/cycle/cycle.js:24:33
+      1    0.1%    0.1%  Function: ~build /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/node_modules/colors/lib/colors.js:62:15
+      1    0.1%    0.1%  Function: ~basename path.js:1387:30
+      1    0.1%    0.1%  Function: ~async.each /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/node_modules/winston/node_modules/async/lib/async.js:150:27
+      1    0.1%    0.1%  Function: ~SyncWriteStream._write internal/fs.js:73:44
+      1    0.1%    0.1%  Function: ~NativeModule.compile bootstrap_node.js:584:44
+      1    0.1%    0.1%  Function: ~Buffer.from buffer.js:175:23
+      1    0.1%    0.1%  Function: ~<anonymous> /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/node_modules/winston/lib/winston/logger.js:234:46
+      1    0.1%    0.1%  Builtin: ToObject {1}
+      1    0.1%    0.1%  Builtin: StringPrototypeCharCodeAt
+      1    0.1%    0.1%  Builtin: ResolvePromise
+      1    0.1%    0.1%  Builtin: RegExpReplace
+      1    0.1%    0.1%  Builtin: LoadIC_Noninlined
+      1    0.1%    0.1%  Builtin: LoadICProtoArray
+      1    0.1%    0.1%  Builtin: KeyedStoreIC_Megamorphic
+      1    0.1%    0.1%  Builtin: GreaterThan
+      1    0.1%    0.1%  Builtin: FunctionPrototypeHasInstance
+      1    0.1%    0.1%  Builtin: FastNewObject
+      1    0.1%    0.1%  Builtin: CallFunction_ReceiverIsNullOrUndefined
+      1    0.1%    0.1%  Builtin: AsyncFunctionAwaitResolveClosure
+
+ [C++]:
+   ticks  total  nonlib   name
+    476   44.4%   45.2%  T ___guarded_open_dprotected_np
+     62    5.8%    5.9%  t node::(anonymous namespace)::ContextifyScript::New(v8::FunctionCallbackInfo<v8::Value> const&)
+     14    1.3%    1.3%  t ___vfprintf
+     13    1.2%    1.2%  t node::WriteBuffer(v8::FunctionCallbackInfo<v8::Value> const&)
+      8    0.7%    0.8%  t void node::Buffer::(anonymous namespace)::StringWrite<(node::encoding)1>(v8::FunctionCallbackInfo<v8::Value> const&)
+      8    0.7%    0.8%  t node::Buffer::(anonymous namespace)::ByteLengthUtf8(v8::FunctionCallbackInfo<v8::Value> const&)
+      7    0.7%    0.7%  t __os_unfair_lock_unlock_slow
+      5    0.5%    0.5%  t int v8::internal::BinarySearch<(v8::internal::SearchMode)0, v8::internal::TransitionArray>(v8::internal::TransitionArray*, v8::internal::Name*, int, int*)
+      4    0.4%    0.4%  t v8::internal::Heap::AllocateRaw(int, v8::internal::AllocationSpace, v8::internal::AllocationAlignment)
+      4    0.4%    0.4%  t node::Binding(v8::FunctionCallbackInfo<v8::Value> const&)
+      4    0.4%    0.4%  T v8::internal::Log::MessageBuilder::WriteToLogFile()
+      4    0.4%    0.4%  T _mach_msg_server_once
+      4    0.4%    0.4%  T _kpersona_get
+      3    0.3%    0.3%  t v8::internal::Scavenger::ScavengeObject(v8::internal::HeapObject**, v8::internal::HeapObject*)
+      3    0.3%    0.3%  t _szone_malloc_should_clear
+      3    0.3%    0.3%  t ___find_warguments
+      3    0.3%    0.3%  T v8::internal::JsonStringifier::SerializeString(v8::internal::Handle<v8::internal::String>)
+      3    0.3%    0.3%  T v8::internal::FunctionCallbackArguments::Call(void (*)(v8::FunctionCallbackInfo<v8::Value> const&))
+      3    0.3%    0.3%  T _fputws_l
+      2    0.2%    0.2%  t void v8::internal::String::WriteToFlat<unsigned char>(v8::internal::String*, unsigned char*, int, int)
+      2    0.2%    0.2%  t void std::__1::__sort<v8::internal::MarkCompactCollector::CollectEvacuationCandidates(v8::internal::PagedSpace*)::$_4&, std::__1::pair<unsigned long, v8::internal::Page*>*>(std::__1::pair<unsigned long, v8::internal::Page*>*, std::__1::pair<unsigned long, v8::internal::Page*>*, v8::internal::MarkCompactCollector::CollectEvacuationCandidates(v8::internal::PagedSpace*)::$_4&)
+      2    0.2%    0.2%  t v8::internal::Worklist<std::__1::pair<v8::internal::HeapObject*, int>, 64>::Pop(int, std::__1::pair<v8::internal::HeapObject*, int>*)
+      2    0.2%    0.2%  t v8::internal::LookupIterator::State v8::internal::LookupIterator::LookupInRegularHolder<false>(v8::internal::Map*, v8::internal::JSReceiver*)
+      2    0.2%    0.2%  t v8::internal::JsonStringifier::Result v8::internal::JsonStringifier::Serialize_<true>(v8::internal::Handle<v8::internal::Object>, bool, v8::internal::Handle<v8::internal::Object>)
+      2    0.2%    0.2%  t v8::internal::JsonStringifier::Result v8::internal::JsonStringifier::Serialize_<false>(v8::internal::Handle<v8::internal::Object>, bool, v8::internal::Handle<v8::internal::Object>)
+      2    0.2%    0.2%  t v8::internal::HeapObject::SizeFromMap(v8::internal::Map*) const
+      2    0.2%    0.2%  t v8::internal::Builtin_Impl_HandleApiCall(v8::internal::BuiltinArguments, v8::internal::Isolate*)
+      2    0.2%    0.2%  t node::cares_wrap::(anonymous namespace)::ChannelWrap::New(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.2%    0.2%  t node::Read(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.2%    0.2%  t node::DLOpen(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.2%    0.2%  t node::(anonymous namespace)::ContextifyScript::RunInThisContext(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.2%    0.2%  t int v8::internal::BinarySearch<(v8::internal::SearchMode)1, v8::internal::DescriptorArray>(v8::internal::DescriptorArray*, v8::internal::Name*, int, int*)
+      2    0.2%    0.2%  t __malloc_initialize
+      2    0.2%    0.2%  T v8::internal::Zone::Zone(v8::internal::AccountingAllocator*, char const*)
+      2    0.2%    0.2%  T v8::internal::String::CalculateLineEnds(v8::internal::Handle<v8::internal::String>, bool)
+      2    0.2%    0.2%  T v8::internal::Scanner::ScanIdentifierOrKeyword()
+      2    0.2%    0.2%  T v8::internal::Object::AddDataProperty(v8::internal::LookupIterator*, v8::internal::Handle<v8::internal::Object>, v8::internal::PropertyAttributes, v8::internal::Object::ShouldThrow, v8::internal::Object::StoreFromKeyed)
+      2    0.2%    0.2%  T v8::internal::JsonParser<true>::ParseJsonValue()
+      2    0.2%    0.2%  T v8::internal::IncrementalMarking::WhiteToGreyAndPush(v8::internal::HeapObject*)
+      2    0.2%    0.2%  T v8::internal::IncrementalMarking::Step(unsigned long, v8::internal::IncrementalMarking::CompletionAction, v8::internal::IncrementalMarking::ForceCompletionAction, v8::internal::StepOrigin)
+      2    0.2%    0.2%  T v8::internal::Factory::NewConsString(v8::internal::Handle<v8::internal::String>, v8::internal::Handle<v8::internal::String>)
+      2    0.2%    0.2%  T node::TTYWrap::New(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.2%    0.2%  T __kernelrpc_vm_remap
+      1    0.1%    0.1%  t void v8::internal::String::WriteToFlat<unsigned short>(v8::internal::String*, unsigned short*, int, int)
+      1    0.1%    0.1%  t void v8::internal::BodyDescriptorApply<v8::internal::CallIterateBody, void, v8::internal::HeapObject*, int, v8::internal::ObjectVisitor*>(v8::internal::InstanceType, v8::internal::HeapObject*, int, v8::internal::ObjectVisitor*)
+      1    0.1%    0.1%  t void std::__1::__sort<v8::internal::EnumIndexComparator<v8::internal::NameDictionary>&, v8::base::AtomicElement<v8::internal::Smi*>*>(v8::base::AtomicElement<v8::internal::Smi*>*, v8::base::AtomicElement<v8::internal::Smi*>*, v8::internal::EnumIndexComparator<v8::internal::NameDictionary>&)
+      1    0.1%    0.1%  t v8::internal::compiler::ScheduleEarlyNodeVisitor::VisitNode(v8::internal::compiler::Node*)
+      1    0.1%    0.1%  t v8::internal::compiler::LoopFinderImpl::IsBackedge(v8::internal::compiler::Node*, int)
+      1    0.1%    0.1%  t v8::internal::Worklist<v8::internal::HeapObject*, 64>::Push(int, v8::internal::HeapObject*)
+      1    0.1%    0.1%  t v8::internal::String::Flatten(v8::internal::Handle<v8::internal::String>, v8::internal::PretenureFlag)
+      1    0.1%    0.1%  t v8::internal::StatsCounter::Increment()
+      1    0.1%    0.1%  t v8::internal::PrototypeIterator::AdvanceIgnoringProxies()
+      1    0.1%    0.1%  t v8::internal::ParserBase<v8::internal::Parser>::ParseLeftHandSideExpression(bool*)
+      1    0.1%    0.1%  t v8::internal::Handle<v8::internal::String> v8::internal::JsonParser<true>::ScanJsonString<true>()
+      1    0.1%    0.1%  t v8::internal::ExpressionClassifier<v8::internal::ParserTypes<v8::internal::Parser> >::RecordBindingPatternError(v8::internal::Scanner::Location const&, v8::internal::MessageTemplate::Template, char const*)
+      1    0.1%    0.1%  t v8::internal::Double::NormalizedBoundaries(v8::internal::DiyFp*, v8::internal::DiyFp*) const
+      1    0.1%    0.1%  t v8::internal::ConsString* v8::internal::String::VisitFlat<v8::internal::IteratingStringHasher>(v8::internal::IteratingStringHasher*, v8::internal::String*, int)
+      1    0.1%    0.1%  t v8::internal::Builtin_Impl_DatePrototypeToISOString(v8::internal::BuiltinArguments, v8::internal::Isolate*)
+      1    0.1%    0.1%  t v8::internal::Builtin_Impl_DateConstructor_ConstructStub(v8::internal::BuiltinArguments, v8::internal::Isolate*)
+      1    0.1%    0.1%  t v8::internal::(anonymous namespace)::CopyObjectToObjectElements(v8::internal::FixedArrayBase*, v8::internal::ElementsKind, unsigned int, v8::internal::FixedArrayBase*, v8::internal::ElementsKind, unsigned int, int)
+      1    0.1%    0.1%  t std::__1::vector<v8::internal::SourcePosition, v8::internal::ZoneAllocator<v8::internal::SourcePosition> >::__append(unsigned long, v8::internal::SourcePosition const&)
+      1    0.1%    0.1%  t std::__1::__hash_table<std::__1::__hash_value_type<v8_inspector::V8DebuggerAgentImpl*, int>, std::__1::__unordered_map_hasher<v8_inspector::V8DebuggerAgentImpl*, std::__1::__hash_value_type<v8_inspector::V8DebuggerAgentImpl*, int>, std::__1::hash<v8_inspector::V8DebuggerAgentImpl*>, true>, std::__1::__unordered_map_equal<v8_inspector::V8DebuggerAgentImpl*, std::__1::__hash_value_type<v8_inspector::V8DebuggerAgentImpl*, int>, std::__1::equal_to<v8_inspector::V8DebuggerAgentImpl*>, true>, std::__1::allocator<std::__1::__hash_value_type<v8_inspector::V8DebuggerAgentImpl*, int> > >::~__hash_table()
+      1    0.1%    0.1%  t node::i18n::(anonymous namespace)::GetVersion(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.1%    0.1%  t node::Open(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.1%    0.1%  t node::InternalModuleStat(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.1%    0.1%  t node::InternalModuleReadFile(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.1%    0.1%  t node::(anonymous namespace)::RunMicrotasks(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.1%    0.1%  t node::(anonymous namespace)::Close(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.1%    0.1%  t _uv__fs_work
+      1    0.1%    0.1%  t _update_cache_for_file_streams
+      1    0.1%    0.1%  t _mvm_allocate_pages
+      1    0.1%    0.1%  t __os_unfair_lock_lock_slow
+      1    0.1%    0.1%  t __os_lock_unfair_lock
+      1    0.1%    0.1%  t ___vfwscanf
+      1    0.1%    0.1%  t ___printf_flush
+      1    0.1%    0.1%  t __GB2312_mbrtowc
+      1    0.1%    0.1%  T void v8::internal::LookupIterator::Start<false>()
+      1    0.1%    0.1%  T v8::internal::interpreter::BytecodeRegisterOptimizer::Flush()
+      1    0.1%    0.1%  T v8::internal::interpreter::BytecodeDecoder::DecodeSignedOperand(unsigned char const*, v8::internal::interpreter::OperandType, v8::internal::interpreter::OperandScale)
+      1    0.1%    0.1%  T v8::internal::interpreter::BytecodeArrayBuilder::StoreAccumulatorInRegister(v8::internal::interpreter::Register)
+      1    0.1%    0.1%  T v8::internal::interpreter::BytecodeArrayBuilder::StackCheck(int)
+      1    0.1%    0.1%  T v8::internal::interpreter::BytecodeArrayBuilder::CompareOperation(v8::internal::Token::Value, v8::internal::interpreter::Register, int)
+      1    0.1%    0.1%  T v8::internal::compiler::NodeProperties::PastEffectIndex(v8::internal::compiler::Node*)
+      1    0.1%    0.1%  T v8::internal::compiler::NodeProperties::GetEffectInput(v8::internal::compiler::Node*, int)
+      1    0.1%    0.1%  T v8::internal::compiler::LiveRange::SplitAt(v8::internal::compiler::LifetimePosition, v8::internal::Zone*)
+      1    0.1%    0.1%  T v8::internal::compiler::JSCreateLowering::GetSpecializationFeedbackVector(v8::internal::compiler::Node*)
+      1    0.1%    0.1%  T v8::internal::compiler::GraphTrimmer::TrimGraph()
+      1    0.1%    0.1%  T v8::internal::compiler::GraphReducer::Revisit(v8::internal::compiler::Node*)
+      1    0.1%    0.1%  T v8::internal::compiler::BytecodeGraphBuilder::BuildCall(v8::internal::ConvertReceiverMode, v8::internal::compiler::Node* const*, unsigned long, int)
+      1    0.1%    0.1%  T v8::internal::Zone::New(unsigned long)
+      1    0.1%    0.1%  T v8::internal::WeakFixedArray::Add(v8::internal::Handle<v8::internal::Object>, v8::internal::Handle<v8::internal::HeapObject>, int*)
+      1    0.1%    0.1%  T v8::internal::VariableProxy::BindTo(v8::internal::Variable*)
+      1    0.1%    0.1%  T v8::internal::TransitionArray::FindTransitionToField(v8::internal::Handle<v8::internal::Map>, v8::internal::Handle<v8::internal::Name>)
+      1    0.1%    0.1%  T v8::internal::String::ToCString(v8::internal::AllowNullsFlag, v8::internal::RobustnessFlag, int, int, int*)
+      1    0.1%    0.1%  T v8::internal::Scope::Scope(v8::internal::Zone*)
+      1    0.1%    0.1%  T v8::internal::Scope::DeclareVariable(v8::internal::Declaration*, v8::internal::VariableMode, v8::internal::InitializationFlag, bool, bool*, bool*)
+      1    0.1%    0.1%  T v8::internal::Scanner::Scan()
+      1    0.1%    0.1%  T v8::internal::Runtime_RegExpExecMultiple(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.1%    0.1%  T v8::internal::RegExpImpl::IrregexpExecRaw(v8::internal::Handle<v8::internal::JSRegExp>, v8::internal::Handle<v8::internal::String>, int, int*, int)
+      1    0.1%    0.1%  T v8::internal::PagedSpace::SizeOfObjects()
+      1    0.1%    0.1%  T v8::internal::MarkCompactCollector::RecordRelocSlot(v8::internal::Code*, v8::internal::RelocInfo*, v8::internal::Object*)
+      1    0.1%    0.1%  T v8::internal::Logger::LogCodeObjects()
+      1    0.1%    0.1%  T v8::internal::LoadIC::Load(v8::internal::Handle<v8::internal::Object>, v8::internal::Handle<v8::internal::Name>)
+      1    0.1%    0.1%  T v8::internal::LayoutDescriptor::IsTagged(int, int, int*)
+      1    0.1%    0.1%  T v8::internal::LargeObjectSpace::FindPage(unsigned char*)
+      1    0.1%    0.1%  T v8::internal::JsonStringifier::StackPush(v8::internal::Handle<v8::internal::Object>)
+      1    0.1%    0.1%  T v8::internal::JsonStringifier::ApplyToJsonFunction(v8::internal::Handle<v8::internal::Object>, v8::internal::Handle<v8::internal::Object>)
+      1    0.1%    0.1%  T v8::internal::JsonParser<true>::ParseJsonObject()
+      1    0.1%    0.1%  T v8::internal::JSReceiver::GetPropertyAttributes(v8::internal::LookupIterator*)
+      1    0.1%    0.1%  T v8::internal::JSObject::MigrateToMap(v8::internal::Handle<v8::internal::JSObject>, v8::internal::Handle<v8::internal::Map>, int)
+      1    0.1%    0.1%  T v8::internal::JSObject::MakePrototypesFast(v8::internal::Handle<v8::internal::Object>, v8::internal::WhereToStart, v8::internal::Isolate*)
+      1    0.1%    0.1%  T v8::internal::JSObject::GetElementsAccessor()
+      1    0.1%    0.1%  T v8::internal::Isolate::Throw(v8::internal::Object*, v8::internal::MessageLocation*)
+      1    0.1%    0.1%  T v8::internal::IC::UpdateState(v8::internal::Handle<v8::internal::Object>, v8::internal::Handle<v8::internal::Object>)
+      1    0.1%    0.1%  T v8::internal::Heap::AllocateJSObjectFromMap(v8::internal::Map*, v8::internal::PretenureFlag, v8::internal::AllocationSite*)
+      1    0.1%    0.1%  T v8::internal::HashTable<v8::internal::WeakHashTable, v8::internal::WeakHashTableShape<2> >::FindEntry(v8::internal::Isolate*, v8::internal::Handle<v8::internal::Object>)
+      1    0.1%    0.1%  T v8::internal::FeedbackNexus::EnsureArrayOfSize(int)
+      1    0.1%    0.1%  T v8::internal::Factory::NewJSObjectFromMap(v8::internal::Handle<v8::internal::Map>, v8::internal::PretenureFlag, v8::internal::Handle<v8::internal::AllocationSite>)
+      1    0.1%    0.1%  T v8::internal::Factory::NewJSArray(v8::internal::ElementsKind, v8::internal::PretenureFlag)
+      1    0.1%    0.1%  T v8::internal::Factory::NewFunction(v8::internal::Handle<v8::internal::Map>, v8::internal::Handle<v8::internal::String>, v8::internal::MaybeHandle<v8::internal::Code>)
+      1    0.1%    0.1%  T v8::internal::Factory::NewConsString(v8::internal::Handle<v8::internal::String>, v8::internal::Handle<v8::internal::String>, int, bool)
+      1    0.1%    0.1%  T v8::internal::Deserializer::ReadData(v8::internal::Object**, v8::internal::Object**, int, unsigned char*)
+      1    0.1%    0.1%  T v8::internal::Assembler::pushq_imm32(int)
+      1    0.1%    0.1%  T v8::internal::Accessors::FunctionLengthGetter(v8::Local<v8::Name>, v8::PropertyCallbackInfo<v8::Value> const&)
+      1    0.1%    0.1%  T v8::base::TimeTicks::HighResolutionNow()
+      1    0.1%    0.1%  T v8::base::Time::ToJsTime() const
+      1    0.1%    0.1%  T v8::base::Mutex::Unlock()
+      1    0.1%    0.1%  T v8::Value::IsArrayBufferView() const
+      1    0.1%    0.1%  T node::AsyncWrap::PushAsyncIds(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.1%    0.1%  T _vm_read
+      1    0.1%    0.1%  T _uv_fs_write
+      1    0.1%    0.1%  T _ungetc
+      1    0.1%    0.1%  T _swscanf_l
+      1    0.1%    0.1%  T _os_unfair_lock_lock_with_options_4Libc
+      1    0.1%    0.1%  T _malloc
+      1    0.1%    0.1%  T _mach_vm_purgable_control
+      1    0.1%    0.1%  T _host_create_mach_voucher
+      1    0.1%    0.1%  T __sread
+      1    0.1%    0.1%  T ___ungetc
+
+ [Summary]:
+   ticks  total  nonlib   name
+    165   15.4%   15.7%  JavaScript
+    775   72.3%   73.5%  C++
+     23    2.1%    2.2%  GC
+     18    1.7%          Shared libraries
+    104    9.7%          Unaccounted
+
+ [C++ entry points]:
+   ticks    cpp   total   name
+    449   61.8%   41.9%  T v8::internal::Builtin_HandleApiCall(int, v8::internal::Object**, v8::internal::Isolate*)
+     83   11.4%    7.7%  T v8::internal::Builtin_DateConstructor_ConstructStub(int, v8::internal::Object**, v8::internal::Isolate*)
+     43    5.9%    4.0%  T ___guarded_open_dprotected_np
+     30    4.1%    2.8%  T v8::internal::Runtime_CompileLazy(int, v8::internal::Object**, v8::internal::Isolate*)
+     16    2.2%    1.5%  T v8::internal::Builtin_JsonStringify(int, v8::internal::Object**, v8::internal::Isolate*)
+     15    2.1%    1.4%  T v8::internal::Builtin_JsonParse(int, v8::internal::Object**, v8::internal::Isolate*)
+     11    1.5%    1.0%  T v8::internal::Runtime_LoadIC_Miss(int, v8::internal::Object**, v8::internal::Isolate*)
+     11    1.5%    1.0%  T v8::internal::Builtin_DateNow(int, v8::internal::Object**, v8::internal::Isolate*)
+      9    1.2%    0.8%  T v8::internal::Runtime_CompileOptimized_Concurrent(int, v8::internal::Object**, v8::internal::Isolate*)
+      8    1.1%    0.7%  T v8::internal::Runtime_CompileForOnStackReplacement(int, v8::internal::Object**, v8::internal::Isolate*)
+      7    1.0%    0.7%  T v8::internal::Runtime_StringReplaceGlobalRegExpWithString(int, v8::internal::Object**, v8::internal::Isolate*)
+      4    0.6%    0.4%  T v8::internal::Runtime_InterpreterNewClosure(int, v8::internal::Object**, v8::internal::Isolate*)
+      4    0.6%    0.4%  T v8::internal::Builtin_DatePrototypeToISOString(int, v8::internal::Object**, v8::internal::Isolate*)
+      3    0.4%    0.3%  t ___vfprintf
+      3    0.4%    0.3%  T v8::internal::Runtime_RegExpExec(int, v8::internal::Object**, v8::internal::Isolate*)
+      2    0.3%    0.2%  T v8::internal::Runtime_StoreIC_Miss(int, v8::internal::Object**, v8::internal::Isolate*)
+      2    0.3%    0.2%  T v8::internal::Runtime_CreateDataProperty(int, v8::internal::Object**, v8::internal::Isolate*)
+      2    0.3%    0.2%  T v8::internal::Builtin_ArraySlice(int, v8::internal::Object**, v8::internal::Isolate*)
+      2    0.3%    0.2%  T v8::internal::Builtin_ArrayConcat(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.1%    0.1%  t v8::internal::LookupIterator::State v8::internal::LookupIterator::LookupInRegularHolder<false>(v8::internal::Map*, v8::internal::JSReceiver*)
+      1    0.1%    0.1%  t node::(anonymous namespace)::RunMicrotasks(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.1%    0.1%  t _uv__fs_work
+      1    0.1%    0.1%  T v8::internal::Runtime_Throw(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.1%    0.1%  T v8::internal::Runtime_StringCharCodeAtRT(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.1%    0.1%  T v8::internal::Runtime_StackGuard(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.1%    0.1%  T v8::internal::Runtime_RegExpExecMultiple(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.1%    0.1%  T v8::internal::Runtime_ObjectKeys(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.1%    0.1%  T v8::internal::Runtime_NewObject(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.1%    0.1%  T v8::internal::Runtime_KeyedGetProperty(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.1%    0.1%  T v8::internal::Runtime_DateCurrentTime(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.1%    0.1%  T v8::internal::Runtime_AllocateInNewSpace(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.1%    0.1%  T v8::internal::Builtin_ObjectPrototypeSetProto(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.1%    0.1%  T v8::internal::Builtin_ObjectGetOwnPropertyDescriptor(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.1%    0.1%  T v8::internal::Builtin_ObjectDefineProperty(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.1%    0.1%  T v8::internal::Builtin_ObjectDefineProperties(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.1%    0.1%  T v8::internal::Builtin_FunctionConstructor(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.1%    0.1%  T v8::internal::Builtin_ArrayBufferConstructor_ConstructStub(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.1%    0.1%  T v8::base::TimeTicks::HighResolutionNow()
+      1    0.1%    0.1%  T v8::Value::IsArrayBufferView() const
+      1    0.1%    0.1%  T _uv_fs_write
+      1    0.1%    0.1%  T _mach_msg_server_once
+
+ [Bottom up (heavy) profile]:
+  Note: percentage shows a share of a particular caller in the total
+  amount of its parent calls.
+  Callers occupying less than 1.0% are not shown.
+
+   ticks parent  name
+    476   44.4%  T ___guarded_open_dprotected_np
+    302   63.4%    T v8::internal::Builtin_HandleApiCall(int, v8::internal::Object**, v8::internal::Isolate*)
+     78   25.8%      Function: ~Buffer.write buffer.js:855:34
+     45   57.7%        Function: ~fromString buffer.js:298:20
+     45  100.0%          Function: ~Buffer.from buffer.js:175:23
+     41   91.1%            Function: ~decodeChunk _stream_writable.js:327:21
+      4    8.9%            Function: ~runProducer /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/kafkaPoc/producers.js:10:19
+     20   25.6%        LazyCompile: *fromString buffer.js:298:20
+     20  100.0%          Function: ~Buffer.from buffer.js:175:23
+     16   80.0%            Function: ~decodeChunk _stream_writable.js:327:21
+      4   20.0%            Function: ~runProducer /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/kafkaPoc/producers.js:10:19
+     12   15.4%        LazyCompile: *decodeChunk _stream_writable.js:327:21
+     12  100.0%          LazyCompile: *Console.log /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/node_modules/winston/lib/winston/transports/console.js:91:34
+     12  100.0%            Function: ~transportLog /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/node_modules/winston/lib/winston/logger.js:232:24
+      1    1.3%        LazyCompile: *sendMessage /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/src/kafka/producer.js:281:21
+      1  100.0%          Function: ~runProducer /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/kafkaPoc/producers.js:10:19
+      1  100.0%            Builtin: AsyncFunctionAwaitResolveClosure
+     64   21.2%      Function: ~byteLength buffer.js:475:20
+     36   56.3%        Function: ~fromString buffer.js:298:20
+     36  100.0%          Function: ~Buffer.from buffer.js:175:23
+     27   75.0%            Function: ~decodeChunk _stream_writable.js:327:21
+      9   25.0%            Function: ~runProducer /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/kafkaPoc/producers.js:10:19
+     14   21.9%        LazyCompile: *fromString buffer.js:298:20
+     14  100.0%          Function: ~Buffer.from buffer.js:175:23
+     11   78.6%            Function: ~decodeChunk _stream_writable.js:327:21
+      3   21.4%            Function: ~runProducer /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/kafkaPoc/producers.js:10:19
+     10   15.6%        LazyCompile: *decodeChunk _stream_writable.js:327:21
+     10  100.0%          LazyCompile: *Console.log /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/node_modules/winston/lib/winston/transports/console.js:91:34
+     10  100.0%            Function: ~transportLog /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/node_modules/winston/lib/winston/logger.js:232:24
+      4    6.3%        LazyCompile: *sendMessage /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/src/kafka/producer.js:281:21
+      4  100.0%          Function: ~runProducer /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/kafkaPoc/producers.js:10:19
+      4  100.0%            Builtin: AsyncFunctionAwaitResolveClosure
+     29    9.6%      Function: ~fs.writeSync fs.js:727:24
+     29  100.0%        Function: ~SyncWriteStream._write internal/fs.js:73:44
+     29  100.0%          Function: ~doWrite _stream_writable.js:379:17
+     29  100.0%            Function: ~writeOrBuffer _stream_writable.js:339:23
+     17    5.6%      Function: ~runProducer /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/kafkaPoc/producers.js:10:19
+     17  100.0%        Builtin: AsyncFunctionAwaitResolveClosure
+     17  100.0%          Builtin: PromiseHandle
+     17  100.0%            t node::(anonymous namespace)::RunMicrotasks(v8::FunctionCallbackInfo<v8::Value> const&)
+     68   14.3%    T v8::internal::Builtin_DateConstructor_ConstructStub(int, v8::internal::Object**, v8::internal::Isolate*)
+     42   61.8%      Function: ~exports.timestamp /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/node_modules/winston/lib/winston/common.js:307:30
+     42  100.0%        Function: ~exports.log /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/node_modules/winston/lib/winston/common.js:140:24
+     27   64.3%          Function: ~Console.log /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/node_modules/winston/lib/winston/transports/console.js:91:34
+     27  100.0%            Function: ~transportLog /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/node_modules/winston/lib/winston/logger.js:232:24
+     15   35.7%          LazyCompile: *Console.log /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/node_modules/winston/lib/winston/transports/console.js:91:34
+     15  100.0%            Function: ~transportLog /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/node_modules/winston/lib/winston/logger.js:232:24
+     16   23.5%      Function: ~runProducer /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/kafkaPoc/producers.js:10:19
+     16  100.0%        Builtin: AsyncFunctionAwaitResolveClosure
+     16  100.0%          Builtin: PromiseHandle
+     16  100.0%            t node::(anonymous namespace)::RunMicrotasks(v8::FunctionCallbackInfo<v8::Value> const&)
+      9   13.2%      Builtin: AsyncFunctionAwaitResolveClosure
+      9  100.0%        Builtin: PromiseHandle
+      9  100.0%          t node::(anonymous namespace)::RunMicrotasks(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    1.5%      LazyCompile: *sendMessage /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/src/kafka/producer.js:281:21
+      1  100.0%        Builtin: AsyncFunctionAwaitResolveClosure
+      1  100.0%          Builtin: PromiseHandle
+      1  100.0%            t node::(anonymous namespace)::RunMicrotasks(v8::FunctionCallbackInfo<v8::Value> const&)
+     34    7.1%    LazyCompile: *Console.log /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/node_modules/winston/lib/winston/transports/console.js:91:34
+     34  100.0%      Function: ~transportLog /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/node_modules/winston/lib/winston/logger.js:232:24
+     34  100.0%        LazyCompile: *Logger.log /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/node_modules/winston/lib/winston/logger.js:109:33
+     17   50.0%          LazyCompile: *target.(anonymous function) /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/node_modules/winston/lib/winston/common.js:51:30
+     13   76.5%            Function: ~runProducer /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/kafkaPoc/producers.js:10:19
+      4   23.5%            LazyCompile: *sendMessage /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/src/kafka/producer.js:281:21
+     17   50.0%          Function: ~target.(anonymous function) /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/node_modules/winston/lib/winston/common.js:51:30
+     13   76.5%            Function: ~runProducer /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/kafkaPoc/producers.js:10:19
+      4   23.5%            Builtin: AsyncFunctionAwaitResolveClosure
+     10    2.1%    T v8::internal::Builtin_DateNow(int, v8::internal::Object**, v8::internal::Isolate*)
+      9   90.0%      Function: ~runProducer /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/kafkaPoc/producers.js:10:19
+      9  100.0%        Builtin: AsyncFunctionAwaitResolveClosure
+      9  100.0%          Builtin: PromiseHandle
+      9  100.0%            t node::(anonymous namespace)::RunMicrotasks(v8::FunctionCallbackInfo<v8::Value> const&)
+      1   10.0%      LazyCompile: *sendMessage /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/src/kafka/producer.js:281:21
+      1  100.0%        Function: ~runProducer /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/kafkaPoc/producers.js:10:19
+      1  100.0%          Builtin: AsyncFunctionAwaitResolveClosure
+      1  100.0%            Builtin: PromiseHandle
+      9    1.9%    T v8::internal::Runtime_CompileLazy(int, v8::internal::Object**, v8::internal::Isolate*)
+      1   11.1%      Stub: CEntryStub
+      1  100.0%        Function: ~config.colorize /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/node_modules/winston/lib/winston/config.js:21:28
+      1  100.0%          Function: ~exports.log /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/node_modules/winston/lib/winston/common.js:140:24
+      1  100.0%            Function: ~Console.log /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/node_modules/winston/lib/winston/transports/console.js:91:34
+      1   11.1%      Function: ~setupGlobalVariables bootstrap_node.js:251:32
+      1  100.0%        Function: ~startup bootstrap_node.js:12:19
+      1  100.0%          Function: ~<anonymous> bootstrap_node.js:10:10
+      1   11.1%      Function: ~module.exports /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/node_modules/bluebird/js/release/promise.js:2:26
+      1  100.0%        Function: ~<anonymous> /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/node_modules/bluebird/js/release/bluebird.js:1:11
+      1  100.0%          Function: ~Module._compile module.js:600:37
+      1  100.0%            Function: ~Module._extensions..js module.js:652:37
+      1   11.1%      Function: ~exports.Logger /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/node_modules/winston/lib/winston/logger.js:25:40
+      1  100.0%        Function: ~<anonymous> /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/node_modules/winston/lib/winston.js:1:11
+      1  100.0%          Function: ~Module._compile module.js:600:37
+      1  100.0%            Function: ~Module._extensions..js module.js:652:37
+      1   11.1%      Function: ~emitTwo events.js:124:17
+      1  100.0%        Function: ~emit events.js:156:44
+      1   11.1%      Function: ~NativeModule.compile bootstrap_node.js:584:44
+      1  100.0%        Function: ~NativeModule.require bootstrap_node.js:516:34
+      1  100.0%          Function: ~startup bootstrap_node.js:12:19
+      1  100.0%            Function: ~<anonymous> bootstrap_node.js:10:10
+      1   11.1%      Function: ~Module._findPath module.js:176:28
+      1  100.0%        Function: ~Module._resolveFilename module.js:508:35
+      1  100.0%          Function: ~Module._load module.js:442:24
+      1  100.0%            Function: ~Module.runMain module.js:682:26
+      1   11.1%      Function: ~<anonymous> /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/node_modules/winston/node_modules/async/lib/async.js:156:29
+      1  100.0%        Function: ~_each /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/node_modules/winston/node_modules/async/lib/async.js:52:26
+      1  100.0%          Function: ~async.each /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/node_modules/winston/node_modules/async/lib/async.js:150:27
+      1  100.0%            Function: ~Logger.log /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/node_modules/winston/lib/winston/logger.js:109:33
+      1   11.1%      Builtin: ArrayForEach
+      1  100.0%        Function: ~Logger.handleExceptions /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/node_modules/winston/lib/winston/logger.js:417:46
+      1  100.0%          Function: ~Logger.configure /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/node_modules/winston/lib/winston/logger.js:42:39
+      1  100.0%            Function: ~exports.Logger /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/node_modules/winston/lib/winston/logger.js:25:40
+      6    1.3%    T v8::internal::Runtime_LoadIC_Miss(int, v8::internal::Object**, v8::internal::Isolate*)
+      1   16.7%      Function: ~stringSlice buffer.js:555:21
+      1  100.0%        Function: ~Buffer.toString buffer.js:609:37
+      1  100.0%          Function: ~fs.readFileSync fs.js:548:27
+      1  100.0%            Function: ~Module._extensions..js module.js:652:37
+      1   16.7%      Function: ~normalize path.js:1211:32
+      1  100.0%        Function: ~join path.js:1240:22
+      1  100.0%          Function: ~bindings /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/node_modules/bindings/bindings.js:44:19
+      1  100.0%            Function: ~<anonymous> /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/node_modules/node-rdkafka/librdkafka.js:1:11
+      1   16.7%      Function: ~mustacheFactory /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/kafkaPoc/node_modules/mustache/mustache.js:17:34
+      1  100.0%        Function: ~defineMustache /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/kafkaPoc/node_modules/mustache/mustache.js:8:26
+      1  100.0%          Function: ~<anonymous> /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/kafkaPoc/node_modules/mustache/mustache.js:1:11
+      1  100.0%            Function: ~Module._compile module.js:600:37
+      1   16.7%      Function: ~inherits util.js:962:18
+      1  100.0%        Function: ~<anonymous> fs.js:1:11
+      1  100.0%          Function: ~NativeModule.compile bootstrap_node.js:584:44
+      1  100.0%            Function: ~NativeModule.require bootstrap_node.js:516:34
+      1   16.7%      Function: ~dirname path.js:1358:28
+      1  100.0%        Function: ~Module._resolveLookupPaths module.js:339:38
+      1  100.0%          Function: ~Module._resolveFilename module.js:508:35
+      1  100.0%            Function: ~Module._load module.js:442:24
+      1   16.7%      Function: ~deprecate internal/util.js:26:19
+      1  100.0%        Function: ~<anonymous> crypto.js:1:11
+      1  100.0%          Function: ~NativeModule.compile bootstrap_node.js:584:44
+      1  100.0%            Function: ~NativeModule.require bootstrap_node.js:516:34
+
+    104    9.7%  UNKNOWN
+     16   15.4%    LazyCompile: *Console.log /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/node_modules/winston/lib/winston/transports/console.js:91:34
+     16  100.0%      Function: ~transportLog /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/node_modules/winston/lib/winston/logger.js:232:24
+     16  100.0%        LazyCompile: *Logger.log /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/node_modules/winston/lib/winston/logger.js:109:33
+     12   75.0%          Function: ~target.(anonymous function) /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/node_modules/winston/lib/winston/common.js:51:30
+      9   75.0%            Function: ~runProducer /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/kafkaPoc/producers.js:10:19
+      3   25.0%            Builtin: AsyncFunctionAwaitResolveClosure
+      4   25.0%          LazyCompile: *target.(anonymous function) /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/node_modules/winston/lib/winston/common.js:51:30
+      3   75.0%            Function: ~runProducer /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/kafkaPoc/producers.js:10:19
+      1   25.0%            LazyCompile: *sendMessage /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/src/kafka/producer.js:281:21
+      6    5.8%    T v8::internal::Builtin_HandleApiCall(int, v8::internal::Object**, v8::internal::Isolate*)
+      3   50.0%      Function: ~runProducer /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/kafkaPoc/producers.js:10:19
+      3  100.0%        Builtin: AsyncFunctionAwaitResolveClosure
+      3  100.0%          Builtin: PromiseHandle
+      3  100.0%            t node::(anonymous namespace)::RunMicrotasks(v8::FunctionCallbackInfo<v8::Value> const&)
+      1   16.7%      Function: ~fs.writeSync fs.js:727:24
+      1  100.0%        Function: ~SyncWriteStream._write internal/fs.js:73:44
+      1  100.0%          Function: ~doWrite _stream_writable.js:379:17
+      1  100.0%            Function: ~writeOrBuffer _stream_writable.js:339:23
+      1   16.7%      Function: ~Buffer.write buffer.js:855:34
+      1  100.0%        Function: ~fromString buffer.js:298:20
+      1  100.0%          Function: ~Buffer.from buffer.js:175:23
+      1  100.0%            Function: ~decodeChunk _stream_writable.js:327:21
+
+     62    5.8%  t node::(anonymous namespace)::ContextifyScript::New(v8::FunctionCallbackInfo<v8::Value> const&)
+     62  100.0%    T v8::internal::Builtin_HandleApiCall(int, v8::internal::Object**, v8::internal::Isolate*)
+     35   56.5%      Function: ~createScript vm.js:79:22
+     35  100.0%        Function: ~runInThisContext vm.js:138:26
+     35  100.0%          Function: ~Module._compile module.js:600:37
+     35  100.0%            Function: ~Module._extensions..js module.js:652:37
+     27   43.5%      Function: ~runInThisContext bootstrap_node.js:495:28
+     27  100.0%        Function: ~NativeModule.compile bootstrap_node.js:584:44
+     27  100.0%          Function: ~NativeModule.require bootstrap_node.js:516:34
+      4   14.8%            Function: ~<anonymous> util.js:1:11
+      4   14.8%            Function: ~<anonymous> module.js:1:11
+      3   11.1%            Function: ~<anonymous> stream.js:1:11
+      2    7.4%            Function: ~<anonymous> internal/loader/ModuleRequest.js:1:11
+      2    7.4%            Function: ~<anonymous> fs.js:1:11
+      1    3.7%            Function: ~startup bootstrap_node.js:12:19
+      1    3.7%            Function: ~setup_performance internal/process.js:14:27
+      1    3.7%            Function: ~setupNextTick internal/process/next_tick.js:49:23
+      1    3.7%            Function: ~setupGlobalVariables bootstrap_node.js:251:32
+      1    3.7%            Function: ~setupGlobalTimeouts bootstrap_node.js:296:31
+      1    3.7%            Function: ~createWritableStdioStream internal/process/stdio.js:142:35
+      1    3.7%            Function: ~Module._load module.js:442:24
+      1    3.7%            Function: ~<anonymous> tty.js:1:11
+      1    3.7%            Function: ~<anonymous> timers.js:1:11
+      1    3.7%            Function: ~<anonymous> readline.js:1:11
+      1    3.7%            Function: ~<anonymous> internal/loader/Loader.js:1:11
+      1    3.7%            Function: ~<anonymous> _stream_readable.js:1:11
+
+     15    1.4%  Function: ~runProducer /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/kafkaPoc/producers.js:10:19
+     15  100.0%    Builtin: AsyncFunctionAwaitResolveClosure
+     15  100.0%      Builtin: PromiseHandle
+     15  100.0%        t node::(anonymous namespace)::RunMicrotasks(v8::FunctionCallbackInfo<v8::Value> const&)
+
+     14    1.3%  t ___vfprintf
+      7   50.0%    T v8::internal::Builtin_HandleApiCall(int, v8::internal::Object**, v8::internal::Isolate*)
+      2   28.6%      Function: ~byteLength buffer.js:475:20
+      1   50.0%        LazyCompile: *decodeChunk _stream_writable.js:327:21
+      1  100.0%          LazyCompile: *Console.log /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/node_modules/winston/lib/winston/transports/console.js:91:34
+      1  100.0%            Function: ~transportLog /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/node_modules/winston/lib/winston/logger.js:232:24
+      1   50.0%        Function: ~fromString buffer.js:298:20
+      1  100.0%          Function: ~Buffer.from buffer.js:175:23
+      1  100.0%            Function: ~decodeChunk _stream_writable.js:327:21
+      1   14.3%      Function: ~fs.writeSync fs.js:727:24
+      1  100.0%        Function: ~SyncWriteStream._write internal/fs.js:73:44
+      1  100.0%          Function: ~doWrite _stream_writable.js:379:17
+      1  100.0%            Function: ~writeOrBuffer _stream_writable.js:339:23
+      3   21.4%    T v8::internal::Builtin_DateConstructor_ConstructStub(int, v8::internal::Object**, v8::internal::Isolate*)
+      2   66.7%      Function: ~exports.timestamp /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/node_modules/winston/lib/winston/common.js:307:30
+      2  100.0%        Function: ~exports.log /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/node_modules/winston/lib/winston/common.js:140:24
+      1   50.0%          LazyCompile: *Console.log /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/node_modules/winston/lib/winston/transports/console.js:91:34
+      1  100.0%            Function: ~transportLog /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/node_modules/winston/lib/winston/logger.js:232:24
+      1   50.0%          Function: ~Console.log /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/node_modules/winston/lib/winston/transports/console.js:91:34
+      1  100.0%            Function: ~transportLog /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/node_modules/winston/lib/winston/logger.js:232:24
+      1   33.3%      Function: ~runProducer /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/kafkaPoc/producers.js:10:19
+      1  100.0%        Builtin: AsyncFunctionAwaitResolveClosure
+      1  100.0%          Builtin: PromiseHandle
+      1  100.0%            t node::(anonymous namespace)::RunMicrotasks(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    7.1%    T v8::internal::Runtime_CompileLazy(int, v8::internal::Object**, v8::internal::Isolate*)
+      1  100.0%      Function: ~runProducer /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/kafkaPoc/producers.js:10:19
+      1  100.0%        Builtin: AsyncFunctionAwaitResolveClosure
+      1  100.0%          Builtin: PromiseHandle
+      1  100.0%            t node::(anonymous namespace)::RunMicrotasks(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    7.1%    LazyCompile: *sendMessage /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/src/kafka/producer.js:281:21
+      1  100.0%      Function: ~runProducer /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/kafkaPoc/producers.js:10:19
+      1  100.0%        Builtin: AsyncFunctionAwaitResolveClosure
+      1  100.0%          Builtin: PromiseHandle
+      1  100.0%            t node::(anonymous namespace)::RunMicrotasks(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    7.1%    LazyCompile: *emitAfterScript async_hooks.js:443:25
+      1    7.1%    LazyCompile: *Console.log /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/node_modules/winston/lib/winston/transports/console.js:91:34
+      1  100.0%      Function: ~transportLog /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/node_modules/winston/lib/winston/logger.js:232:24
+      1  100.0%        LazyCompile: *Logger.log /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/node_modules/winston/lib/winston/logger.js:109:33
+      1  100.0%          Function: ~target.(anonymous function) /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/node_modules/winston/lib/winston/common.js:51:30
+      1  100.0%            Function: ~runProducer /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/kafkaPoc/producers.js:10:19
+
+     13    1.2%  t node::WriteBuffer(v8::FunctionCallbackInfo<v8::Value> const&)
+     13  100.0%    T v8::internal::Builtin_HandleApiCall(int, v8::internal::Object**, v8::internal::Isolate*)
+     13  100.0%      Function: ~fs.writeSync fs.js:727:24
+     13  100.0%        Function: ~SyncWriteStream._write internal/fs.js:73:44
+     13  100.0%          Function: ~doWrite _stream_writable.js:379:17
+     13  100.0%            Function: ~writeOrBuffer _stream_writable.js:339:23
+
+     13    1.2%  Function: ~exports.log /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/node_modules/winston/lib/winston/common.js:140:24
+      9   69.2%    Function: ~Console.log /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/node_modules/winston/lib/winston/transports/console.js:91:34
+      9  100.0%      Function: ~transportLog /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/node_modules/winston/lib/winston/logger.js:232:24
+      5   55.6%        Function: ~<anonymous> /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/node_modules/winston/node_modules/async/lib/async.js:156:29
+      5  100.0%          Function: ~_each /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/node_modules/winston/node_modules/async/lib/async.js:52:26
+      5  100.0%            Function: ~async.each /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/node_modules/winston/node_modules/async/lib/async.js:150:27
+      4   44.4%        LazyCompile: *Logger.log /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/node_modules/winston/lib/winston/logger.js:109:33
+      4  100.0%          Function: ~target.(anonymous function) /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/node_modules/winston/lib/winston/common.js:51:30
+      3   75.0%            Function: ~runProducer /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/kafkaPoc/producers.js:10:19
+      1   25.0%            Builtin: AsyncFunctionAwaitResolveClosure
+      4   30.8%    LazyCompile: *Console.log /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/node_modules/winston/lib/winston/transports/console.js:91:34
+      4  100.0%      Function: ~transportLog /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/node_modules/winston/lib/winston/logger.js:232:24
+      4  100.0%        LazyCompile: *Logger.log /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/node_modules/winston/lib/winston/logger.js:109:33
+      2   50.0%          LazyCompile: *target.(anonymous function) /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/node_modules/winston/lib/winston/common.js:51:30
+      1   50.0%            LazyCompile: *sendMessage /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/src/kafka/producer.js:281:21
+      1   50.0%            Function: ~runProducer /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/kafkaPoc/producers.js:10:19
+      2   50.0%          Function: ~target.(anonymous function) /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/node_modules/winston/lib/winston/common.js:51:30
+      2  100.0%            Function: ~runProducer /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/kafkaPoc/producers.js:10:19
+
+     11    1.0%  /usr/lib/system/libsystem_pthread.dylib
+      6   54.5%    T v8::internal::Builtin_HandleApiCall(int, v8::internal::Object**, v8::internal::Isolate*)
+      2   33.3%      Function: ~fs.writeSync fs.js:727:24
+      2  100.0%        Function: ~SyncWriteStream._write internal/fs.js:73:44
+      2  100.0%          Function: ~doWrite _stream_writable.js:379:17
+      2  100.0%            Function: ~writeOrBuffer _stream_writable.js:339:23
+      1   16.7%      Function: ~stat module.js:50:14
+      1  100.0%        Function: ~tryFile module.js:149:17
+      1  100.0%          Function: ~tryPackage module.js:129:20
+      1  100.0%            Function: ~Module._findPath module.js:176:28
+      1   16.7%      Function: ~Buffer.write buffer.js:855:34
+      1  100.0%        LazyCompile: *decodeChunk _stream_writable.js:327:21
+      1  100.0%          LazyCompile: *Console.log /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/node_modules/winston/lib/winston/transports/console.js:91:34
+      1  100.0%            Function: ~transportLog /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/node_modules/winston/lib/winston/logger.js:232:24
+      3   27.3%    T v8::internal::Builtin_DateConstructor_ConstructStub(int, v8::internal::Object**, v8::internal::Isolate*)
+      2   66.7%      Function: ~exports.timestamp /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/node_modules/winston/lib/winston/common.js:307:30
+      2  100.0%        Function: ~exports.log /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/node_modules/winston/lib/winston/common.js:140:24
+      2  100.0%          Function: ~Console.log /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/node_modules/winston/lib/winston/transports/console.js:91:34
+      2  100.0%            Function: ~transportLog /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/node_modules/winston/lib/winston/logger.js:232:24
+      1   33.3%      Function: ~runProducer /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/kafkaPoc/producers.js:10:19
+      1  100.0%        Builtin: AsyncFunctionAwaitResolveClosure
+      1  100.0%          Builtin: PromiseHandle
+      1  100.0%            t node::(anonymous namespace)::RunMicrotasks(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    9.1%    T v8::internal::Runtime_StringReplaceGlobalRegExpWithString(int, v8::internal::Object**, v8::internal::Isolate*)
+      1  100.0%      Builtin: StringPrototypeReplace
+      1  100.0%        LazyCompile: *applyStyle /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/node_modules/colors/lib/colors.js:89:20
+      1  100.0%          Function: ~builder /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/node_modules/colors/lib/colors.js:63:33
+      1  100.0%            Function: ~config.colorize /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-services-shared/node_modules/winston/lib/winston/config.js:21:28
+      1    9.1%    T v8::internal::Builtin_JsonParse(int, v8::internal::Object**, v8::internal::Isolate*)
+      1  100.0%      Function: ~runProducer /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/kafkaPoc/producers.js:10:19
+      1  100.0%        Builtin: AsyncFunctionAwaitResolveClosure
+      1  100.0%          Builtin: PromiseHandle
+      1  100.0%            t node::(anonymous namespace)::RunMicrotasks(v8::FunctionCallbackInfo<v8::Value> const&)
+

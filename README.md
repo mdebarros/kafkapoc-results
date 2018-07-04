@@ -10,14 +10,21 @@ Result store: [https://github.com/mdebarros/kafkapoc-results](https://github.com
 ## Selection of Collected results
 
 ### 20180704T10h00:
-- Sync disabled
+- Sync disabled for Consumers
 - [Consumer Analysis](./perf0xConsumer-20180704T10h00/README.md)
 - [Producer Analysis](./perf0xProducer-20180704T10h00/README.md)
 
 ### 20180704T10h20:
-- Sync enabled
+- Sync enabled for Consumers
 - [Consumer Analysis](./perf0xConsumer-20180704T10h20/README.md)
 - [Producer Analysis](./perf0xProducer-20180704T10h20/README.md)
+- [End-to-end Analysis](./endtoend-20180704T10h20/README.md)
+
+### 20180704T18h30:
+- Sync enabled for Consumers
+- [Consumer Analysis](./perf0xConsumer-20180704T18h30/README.md)
+- [Producer Analysis](./perf0xProducer-20180704T18h30/README.md)
+- [End-to-end Analysis](./endtoend-20180704T118h30/README.md)
 
 ## Description of Perf4js Metrics Collected
 
