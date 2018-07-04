@@ -1,7 +1,5 @@
 ### 20180704T18h30:
 
-[README](../README.md)
-
 #### Config:
 
 - [Env Vars](./perfEnv.sh)

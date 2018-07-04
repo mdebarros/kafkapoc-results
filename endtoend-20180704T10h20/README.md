@@ -1,7 +1,5 @@
 ### 20180704T10h20:
 
-[README](../README.md)
-
 #### Detailed Analysis:
 - [Consumer Analysis](../perf0xConsumer-20180704T10h20/README.md)
 - [Producer Analysis](../perf0xProducer-20180704T10h20/README.md)

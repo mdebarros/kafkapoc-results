@@ -1,7 +1,5 @@
 ### 20180704T10h20:
 
-[README](../README.md)
-
 #### Config:
 
 - Sync Disabled for Consumers
