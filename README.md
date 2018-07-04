@@ -50,3 +50,4 @@ Result store: [https://github.com/mdebarros/kafkapoc-results](https://github.com
 | --- | --- | --- |
 | metricProducerConnectProcessingTime | Common Streaming Lib - kafka/producer.js | Time for Producer to connect |
 | metricProducerSendMessageProcessingTime | Common Streaming Lib - kafka/producer.js | Total processing time for sending a message |
+| metricTimeProducerForLoop | KafkaPoc - producers.js | Total processing time for sending batch of messages |
