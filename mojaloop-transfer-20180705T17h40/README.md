@@ -20,6 +20,8 @@ The timings are from when the ml-api-adapter receives the prepare request until 
 #### Single Transaction Runs:
 
 ##### Default Configuration:
+
+1st run
 - First request: `2018-07-05T16:56:15.498Z`
 - Last request: `2018-07-05T16:56:22.408Z`
 - Total number of lines in log file: `10`
@@ -29,6 +31,18 @@ The timings are from when the ml-api-adapter receives the prepare request until 
 - Longest response time in second: `6.91`
 - The average transaction in second: `6.91`
 - Average transactions per second: `0.1447178002894356`
+
+2nd run:
+- First request: `2018-07-06T13:21:46.214Z`
+- Last request: `2018-07-06T13:21:53.982Z`
+- Total number of lines in log file: `10`
+- Number of unique matched entries: `1`
+- Total difference of all requests in seconds: `7.768`
+- Shortest response time in second: `7.768`
+- Longest response time in second: `7.768`
+- The average transaction in second: `7.768`
+- Average transactions per second: `0.12873326467559218`
+
 
 ##### Optimised Configuration:
 <insert>
