@@ -1,0 +1,71 @@
+/usr/local/opt/node@8/bin/node --inspect-brk=57610 /Users/mdebarros/Documents/ModusDocs/Projects/MojaLoop/git/fork/central-ledger/src/api/index.js
+Debugger listening on ws://127.0.0.1:57610/2766744c-6a50-4aeb-b7b6-7b74ea42389c
+For help see https://nodejs.org/en/docs/inspector
+Debugger attached.
+http://Miguels-MacBook-Pro.local:3000
+  GET    /                              Metadata
+  POST   /accounts                      Create an account.
+  PUT    /accounts/{name}               Update an accounts user credentials
+  GET    /accounts/{name}               Retrieve an accounts details by name
+  PUT    /accounts/{name}/settlement    Update an accounts user credentials
+  GET    /auth_token                    Get a token that can be used to authenticate future requests
+  POST   /charge/quote                  Quote a charge for a transaction amount
+  GET    /documentation
+  GET    /health                        Status of ledger
+  POST   /messages                      Send a notification to another participant
+  POST   /participants                  Create a participant.
+  GET    /participants/{name}           Retrieve a participants details by name
+  PUT    /participants/{name}           Update an participants party credentials
+  PUT    /participants/{name}/settlement Update a participants party credentials
+  GET    /positions                     Retrieve outstanding positions.
+  GET    /positions/{name}              Retrieve outstanding positions for an participant.
+  GET    /swagger.json
+  GET    /swaggerui/{path*}
+  GET    /swaggerui/extend.js
+  PUT    /transfers/{id}                Prepare a transfer
+  GET    /transfers/{id}                Get transfer by ID
+  GET    /transfers/{id}/fulfilment     Get transfer fulfilment
+  PUT    /transfers/{id}/fulfilment     Fulfil a transfer
+  PUT    /transfers/{id}/rejection      Reject a transfer
+
+2018-07-06T14:08:48.030Z - info: Server running at:  http://Miguels-MacBook-Pro.local:3000
+2018-07-06T14:08:48.051Z - info: {"positions":{"handler":{}},"transfers":{"handler":{}}}
+2018-07-06T14:08:48.051Z - info: Registering handler module[positions]: {"handler":{}}
+2018-07-06T14:08:48.051Z - info: {}
+2018-07-06T14:08:48.217Z - info: CreateHandle::connect successful topic: topic-dfsp1-position-prepare
+2018-07-06T14:08:48.451Z - info: CreateHandle::connect successful topic: topic-dfsp2-position-prepare
+2018-07-06T14:08:48.453Z - info: Registering handler module[transfers]: {"handler":{}}
+2018-07-06T14:08:48.453Z - info: {}
+2018-07-06T14:08:48.578Z - info: CreateHandle::connect successful topic: topic-dfsp1-transfer-prepare
+2018-07-06T14:08:48.799Z - info: CreateHandle::connect successful topic: topic-dfsp2-transfer-prepare
+2018-07-06T14:08:49.548Z - info: CreateHandle::connect successful topic: topic-transfer-fulfil
+2018-07-06T14:08:49.804Z - info: CreateHandle::connect successful topic: topic-transfer-reject
+2018-07-06T14:08:51.246Z - info: CreateHandle::connect successful topic: topic-transfer-transfer
+2018-07-06T14:10:29.683Z - info: TransferHandler::prepare
+2018-07-06T14:10:29.684Z - info: guid=fc9e2833-bac4-1b9e-a2e7-345eb9730e29:uuid - startPrepareTransferHandler:process
+2018-07-06T14:10:29.712Z - info: TransferHandler::prepare::validationPassed
+2018-07-06T14:10:29.727Z - info: TransferHandler::prepare::validationPassed::newEntry
+2018-07-06T14:10:29.829Z - info: Producer::start::topic=topic-dfsp1-position-prepare
+2018-07-06T14:10:29.829Z - info: Producer::connect::start
+2018-07-06T14:10:30.788Z - info: Producer::connect::end
+2018-07-06T14:10:30.789Z - info: Producer.sendMessage:: messageProtocol:'{"from":"dfsp1","to":"dfsp2","id":"fc9e2833-bac4-1b9e-a2e7-345eb9730e29","content":{"headers":{"content-type":"application/json","date":"2017-11-02T00:00:00.000Z","fspiop-destination":"dfsp2","fspiop-source":"dfsp1","content-length":1038},"payload":{"transferId":"fc9e2833-bac4-1b9e-a2e7-345eb9730e29","payeeFsp":"dfsp2","payerFsp":"dfsp1","amount":{"amount":"100","currency":"USD"},"ilpPacket":"AQAAAAAAAABkEGcuZXdwMjEuaWQuODAwMjCCAhd7InRyYW5zYWN0aW9uSWQiOiJmODU0NzdkYi0xMzVkLTRlMDgtYThiNy0xMmIyMmQ4MmMwZDYiLCJxdW90ZUlkIjoiOWU2NGYzMjEtYzMyNC00ZDI0LTg5MmYtYzQ3ZWY0ZThkZTkxIiwicGF5ZWUiOnsicGFydHlJZEluZm8iOnsicGFydHlJZFR5cGUiOiJNU0lTRE4iLCJwYXJ0eUlkZW50aWZpZXIiOiIyNTYxMjM0NTYiLCJmc3BJZCI6IjIxIn19LCJwYXllciI6eyJwYXJ0eUlkSW5mbyI6eyJwYXJ0eUlkVHlwZSI6Ik1TSVNETiIsInBhcnR5SWRlbnRpZmllciI6IjI1NjIwMTAwMDAxIiwiZnNwSWQiOiIyMCJ9LCJwZXJzb25hbEluZm8iOnsiY29tcGxleE5hbWUiOnsiZmlyc3ROYW1lIjoiTWF0cyIsImxhc3ROYW1lIjoiSGFnbWFuIn0sImRhdGVPZkJpcnRoIjoiMTk4My0xMC0yNSJ9fSwiYW1vdW50Ijp7ImFtb3VudCI6IjEwMCIsImN1cnJlbmN5IjoiVVNEIn0sInRyYW5zYWN0aW9uVHlwZSI6eyJzY2VuYXJpbyI6IlRSQU5TRkVSIiwiaW5pdGlhdG9yIjoiUEFZRVIiLCJpbml0aWF0b3JUeXBlIjoiQ09OU1VNRVIifSwibm90ZSI6ImhlaiJ9","condition":"uU0nuZNNPgilLlLX2n2r-sSE7-N6U4DukIj3rOLvzek","expiration":"2018-11-08T21:31:00.534+01:00"}},"type":"application/json","metadata":{"event":{"id":"403a9c52-16ca-4a5d-a92f-7e49692fb2cb","type":"position","action":"prepare","createdAt":"2018-07-06T14:10:29.344Z","state":{"status":"success","code":0,"description":"action successful"},"responseTo":"c41bc0e8-aecb-4c3c-b10e-54eed3cfbdf5"},"protocol.createdAt":1530886229460}}'
+2018-07-06T14:10:30.790Z - info: Producer::end
+2018-07-06T14:10:30.790Z - info: guid=fc9e2833-bac4-1b9e-a2e7-345eb9730e29:uuid - endPrepareTransferHandler:process
+2018-07-06T14:10:31.793Z - info: guid=fc9e2833-bac4-1b9e-a2e7-345eb9730e29:uuid - startPositionHandler:process
+2018-07-06T14:10:31.794Z - info: TransferHandler::position
+2018-07-06T14:10:31.828Z - info: Producer::start::topic=topic-transfer-transfer
+2018-07-06T14:10:31.828Z - info: Producer::connect::start
+2018-07-06T14:10:32.798Z - info: Producer::connect::end
+2018-07-06T14:10:32.798Z - info: Producer.sendMessage:: messageProtocol:'{"from":"dfsp1","to":"dfsp2","id":"fc9e2833-bac4-1b9e-a2e7-345eb9730e29","content":{"headers":{"content-type":"application/json","date":"2017-11-02T00:00:00.000Z","fspiop-destination":"dfsp2","fspiop-source":"dfsp1","content-length":1038},"payload":{"transferId":"fc9e2833-bac4-1b9e-a2e7-345eb9730e29","payeeFsp":"dfsp2","payerFsp":"dfsp1","amount":{"amount":"100","currency":"USD"},"ilpPacket":"AQAAAAAAAABkEGcuZXdwMjEuaWQuODAwMjCCAhd7InRyYW5zYWN0aW9uSWQiOiJmODU0NzdkYi0xMzVkLTRlMDgtYThiNy0xMmIyMmQ4MmMwZDYiLCJxdW90ZUlkIjoiOWU2NGYzMjEtYzMyNC00ZDI0LTg5MmYtYzQ3ZWY0ZThkZTkxIiwicGF5ZWUiOnsicGFydHlJZEluZm8iOnsicGFydHlJZFR5cGUiOiJNU0lTRE4iLCJwYXJ0eUlkZW50aWZpZXIiOiIyNTYxMjM0NTYiLCJmc3BJZCI6IjIxIn19LCJwYXllciI6eyJwYXJ0eUlkSW5mbyI6eyJwYXJ0eUlkVHlwZSI6Ik1TSVNETiIsInBhcnR5SWRlbnRpZmllciI6IjI1NjIwMTAwMDAxIiwiZnNwSWQiOiIyMCJ9LCJwZXJzb25hbEluZm8iOnsiY29tcGxleE5hbWUiOnsiZmlyc3ROYW1lIjoiTWF0cyIsImxhc3ROYW1lIjoiSGFnbWFuIn0sImRhdGVPZkJpcnRoIjoiMTk4My0xMC0yNSJ9fSwiYW1vdW50Ijp7ImFtb3VudCI6IjEwMCIsImN1cnJlbmN5IjoiVVNEIn0sInRyYW5zYWN0aW9uVHlwZSI6eyJzY2VuYXJpbyI6IlRSQU5TRkVSIiwiaW5pdGlhdG9yIjoiUEFZRVIiLCJpbml0aWF0b3JUeXBlIjoiQ09OU1VNRVIifSwibm90ZSI6ImhlaiJ9","condition":"uU0nuZNNPgilLlLX2n2r-sSE7-N6U4DukIj3rOLvzek","expiration":"2018-11-08T21:31:00.534+01:00"}},"type":"application/json","metadata":{"event":{"id":"16f9d32b-238c-43be-a847-1a45b49029f1","type":"transfer","action":"prepare","createdAt":"2018-07-06T14:10:29.344Z","state":{"status":"success","code":0,"description":"action successful"},"responseTo":"403a9c52-16ca-4a5d-a92f-7e49692fb2cb"},"protocol.createdAt":1530886230789}}'
+2018-07-06T14:10:32.799Z - info: Producer::end
+2018-07-06T14:10:32.799Z - info: guid=fc9e2833-bac4-1b9e-a2e7-345eb9730e29:uuid - endPositionHandler:process
+2018-07-06T14:10:32.804Z - info: TransferHandler::transfer
+2018-07-06T14:10:32.804Z - info: guid=fc9e2833-bac4-1b9e-a2e7-345eb9730e29:uuid - startTransferHandler:process
+2018-07-06T14:10:32.804Z - info: TransferHandler::transfer action: prepare
+2018-07-06T14:10:32.804Z - info: TransferHandler::transfer status: success
+2018-07-06T14:10:32.805Z - info: Producer::start::topic=topic-notification-event
+2018-07-06T14:10:32.805Z - info: Producer::connect::start
+2018-07-06T14:10:33.806Z - info: Producer::connect::end
+2018-07-06T14:10:33.806Z - info: Producer.sendMessage:: messageProtocol:'{"from":"dfsp1","to":"dfsp2","id":"fc9e2833-bac4-1b9e-a2e7-345eb9730e29","content":{"headers":{"content-type":"application/json","date":"2017-11-02T00:00:00.000Z","fspiop-destination":"dfsp2","fspiop-source":"dfsp1","content-length":1038},"payload":{"transferId":"fc9e2833-bac4-1b9e-a2e7-345eb9730e29","payeeFsp":"dfsp2","payerFsp":"dfsp1","amount":{"amount":"100","currency":"USD"},"ilpPacket":"AQAAAAAAAABkEGcuZXdwMjEuaWQuODAwMjCCAhd7InRyYW5zYWN0aW9uSWQiOiJmODU0NzdkYi0xMzVkLTRlMDgtYThiNy0xMmIyMmQ4MmMwZDYiLCJxdW90ZUlkIjoiOWU2NGYzMjEtYzMyNC00ZDI0LTg5MmYtYzQ3ZWY0ZThkZTkxIiwicGF5ZWUiOnsicGFydHlJZEluZm8iOnsicGFydHlJZFR5cGUiOiJNU0lTRE4iLCJwYXJ0eUlkZW50aWZpZXIiOiIyNTYxMjM0NTYiLCJmc3BJZCI6IjIxIn19LCJwYXllciI6eyJwYXJ0eUlkSW5mbyI6eyJwYXJ0eUlkVHlwZSI6Ik1TSVNETiIsInBhcnR5SWRlbnRpZmllciI6IjI1NjIwMTAwMDAxIiwiZnNwSWQiOiIyMCJ9LCJwZXJzb25hbEluZm8iOnsiY29tcGxleE5hbWUiOnsiZmlyc3ROYW1lIjoiTWF0cyIsImxhc3ROYW1lIjoiSGFnbWFuIn0sImRhdGVPZkJpcnRoIjoiMTk4My0xMC0yNSJ9fSwiYW1vdW50Ijp7ImFtb3VudCI6IjEwMCIsImN1cnJlbmN5IjoiVVNEIn0sInRyYW5zYWN0aW9uVHlwZSI6eyJzY2VuYXJpbyI6IlRSQU5TRkVSIiwiaW5pdGlhdG9yIjoiUEFZRVIiLCJpbml0aWF0b3JUeXBlIjoiQ09OU1VNRVIifSwibm90ZSI6ImhlaiJ9","condition":"uU0nuZNNPgilLlLX2n2r-sSE7-N6U4DukIj3rOLvzek","expiration":"2018-11-08T21:31:00.534+01:00"}},"type":"application/json","metadata":{"event":{"id":"c11faa3d-1944-4f7f-93ce-f9f85f3a5c16","type":"notification","action":"prepare","createdAt":"2018-07-06T14:10:29.344Z","state":{"status":"success","code":0,"description":"action successful"},"responseTo":"16f9d32b-238c-43be-a847-1a45b49029f1"},"protocol.createdAt":1530886232799}}'
+2018-07-06T14:10:33.806Z - info: Producer::end
+2018-07-06T14:10:33.811Z - info: guid=fc9e2833-bac4-1b9e-a2e7-345eb9730e29:uuid - endTransferHandler:process
