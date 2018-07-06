@@ -16,10 +16,17 @@ The timings are from when the ml-api-adapter receives the prepare request until 
 3. Run MySQL
 - `DBUSER=central_ledger; DBPASS=password; SLEEPTIME=15; docker stop mysql; docker rm mysql; docker run -p 3306:3306 -d --name mysql -e MYSQL_USER=$DBUSER -e MYSQL_PASSWORD=$DBPASS -e MYSQL_DATABASE=$DBUSER -e MYSQL_ALLOW_EMPTY_PASSWORD=true mysql/mysql-server; sleep $SLEEPTIME; docker exec -it mysql mysql -uroot -e "ALTER USER '$DBUSER'@'%' IDENTIFIED WITH mysql_native_password BY '$DBPASS';"`
 
+#### Default Configuration:
+- [Central Ledger Config](./single-transaction-default-central-ledger-config.json)
+- [Ml-api-adapter Config](./single-transaction-default-ml-api-adapter-config.json)
+
+#### Optimised Configuration:
+- [Central Ledger Config](./single-transaction-optomised-central-ledge.json)
+- [Ml-api-adapter Config](./single-transaction-optomised-ml-api-adapter.json)
 
 #### Single Transaction Runs:
 
-##### Default Configuration:
+##### Default Results:
 
 1st run
 - First request: `2018-07-05T16:56:15.498Z`
@@ -43,9 +50,19 @@ The timings are from when the ml-api-adapter receives the prepare request until 
 - The average transaction in second: `7.768`
 - Average transactions per second: `0.12873326467559218`
 
+##### Optimised Results:
 
-##### Optimised Configuration:
-<insert>
+1st run:
+- First request: `2018-07-06T13:56:16.316Z`
+- Last request: `2018-07-06T13:56:19.758Z`
+- Total number of lines in log file: `10`
+- Number of unique matched entries: `1`
+- Total difference of all requests in seconds: `3.442`
+- Shortest response time in second: `3.442`
+- Longest response time in second: `3.442`
+- The average transaction in second: `3.442`
+- Average transactions per second: `0.2905287623474724`
+
 
 Analysis:
 - tbd
