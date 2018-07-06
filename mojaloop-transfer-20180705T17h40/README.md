@@ -21,8 +21,8 @@ The timings are from when the ml-api-adapter receives the prepare request until 
 - [Ml-api-adapter Config](./single-transaction-default-ml-api-adapter-config.json)
 
 #### Optimised Configuration:
-- [Central Ledger Config](./single-transaction-optomised-central-ledge.json)
-- [Ml-api-adapter Config](./single-transaction-optomised-ml-api-adapter.json)
+- [Central Ledger Config](./single-transaction-optimised-central-ledger-config.json)
+- [Ml-api-adapter Config](./single-transaction-optimised-ml-api-adapter-config.json)
 
 #### Single Transaction Runs:
 
@@ -62,6 +62,17 @@ The timings are from when the ml-api-adapter receives the prepare request until 
 - Longest response time in second: `3.442`
 - The average transaction in second: `3.442`
 - Average transactions per second: `0.2905287623474724`
+
+2nd run:
+- First request: `2018-07-06T14:10:29.343Z`
+- Last request: `2018-07-06T14:10:34.066Z`
+- Total number of lines in log file: `10`
+- Number of unique matched entries: `1`
+- Total difference of all requests in seconds: `4.723`
+- Shortest response time in second: `4.723`
+- Longest response time in second: `4.723`
+- The average transaction in second: `4.723`
+- Average transactions per second: `0.21172983273343216`
 
 
 Analysis:
