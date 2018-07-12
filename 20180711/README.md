@@ -265,7 +265,7 @@ The average transaction in second: 0.699035
 Average transactions per second: 653.59477124183
 ```
 
-## Use Case 3 - Auto-Commit
+## Use Case 4 - Auto-Commit with reduced Auto-Commit-Interval
 
 ### Testing Parameters:
 - Batch Size: 1000
