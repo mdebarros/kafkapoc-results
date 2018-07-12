@@ -30,6 +30,9 @@ Result store: [https://github.com/mdebarros/kafkapoc-results](https://github.com
 ### 20180705T17h40:
 - [Mojaloop Transfer Prepare Results](./mojaloop-transfer-20180705T17h40/README.md)
 
+### 20180711T17h00:
+- [CommitSync Comparison Tests](./20180711/README.md)
+
 ## Description of Perf4js Metrics Collected
 
 ### Consumer Metrics:
