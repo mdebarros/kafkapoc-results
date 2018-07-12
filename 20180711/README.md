@@ -182,7 +182,7 @@ Average transactions per second: 679.3478260869565
 - Batch Size: 1000
 - Commit Sync Enabled: False _(manually commented out the commit lines in the consumer)_
 - Auto-commit enabled _(see config.json)_
-- Auto-commit-internal-ms: 5000 _(default)_
+- Auto-commit-internal-ms: 5000 _(default)_ _(see config.json)_
 
 ### 1st Run:
 
@@ -263,4 +263,93 @@ Shortest response time in second: 0.364
 Longest response time in second: 0.906
 The average transaction in second: 0.699035
 Average transactions per second: 653.59477124183
+```
+
+## Use Case 3 - Auto-Commit
+
+### Testing Parameters:
+- Batch Size: 1000
+- Commit Sync Enabled: False _(manually commented out the commit lines in the consumer)_
+- Auto-commit enabled _(see config.json)_
+- Auto-commit-internal-ms: 100 _(see config.json)_
+
+### 1st Run:
+
+#### Producer:
+```bash
+Performance Statistics   2018-07-12 10:15:00 - 2018-07-12 10:30:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+metricProducerConnectProcessingTime                    127.0         127         127         0.0           1
+metricProducerSendMessageProcessingTime                  0.1           0           3         0.3        1000
+metricTimeProducerForLoop                              660.0         660         660         0.0           1
+```
+
+#### Consumer:
+```bash
+Performance Statistics   2018-07-12 10:15:00 - 2018-07-12 10:30:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+metricConsumeProcessingTime                              1.0           1           1         0.0           1
+metricConsumeRecursiveConsumeProcessingTime              4.1           2           6         1.3          10
+metricConsumeRecursiveProcessingTime                     0.0           0           1         0.2          41
+metricConsumeSyncQueueProcessingTime                    65.3          40          95        18.7          10
+metricConsumeSyncQueueResolveProcessingTime              0.3           0           1         0.5          10
+metricConsumerConnectProcessingTime                    144.0         144         144         0.0           1
+metricEndOfCallBack                                     63.6          40          93        17.8          10
+metricOfPerfObsCallBackConsumerFunction                 63.8          40          93        17.8          10
+metricTimeDiffFromDropoffToEnd                         770.6         375         981       198.1        1000
+metricTimeDiffFromMessageSendToDropoff                   0.4           0           4         0.5        1000
+metricTimeDiffFromMessageSendToEnd                     770.9         376         982       198.2        1000
+```
+
+#### End-to-end:
+```bash
+First request: 2018-07-12T08:29:00.695Z
+Last request: 2018-07-12T08:29:02.277Z
+Total number of lines in log file: 2000
+Number of unique matched entries: 1000
+Total difference of all requests in seconds: 1.582
+Shortest response time in second: 0.376
+Longest response time in second: 0.982
+The average transaction in second: 0.770934
+Average transactions per second: 632.1112515802781
+```
+
+## 2nd Run:
+
+#### Producer:
+```bash
+Performance Statistics   2018-07-12 10:30:00 - 2018-07-12 10:45:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+metricProducerConnectProcessingTime                    127.0         127         127         0.0           1
+metricProducerSendMessageProcessingTime                  0.1           0           2         0.4        1000
+metricTimeProducerForLoop                              690.0         690         690         0.0           1
+```
+#### Consumer:
+```bash
+Performance Statistics   2018-07-12 10:30:00 - 2018-07-12 10:45:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+metricConsumeProcessingTime                              2.0           2           2         0.0           1
+metricConsumeRecursiveConsumeProcessingTime              4.6           3           7         1.4          10
+metricConsumeRecursiveProcessingTime                     0.1           0           1         0.3          29
+metricConsumeSyncQueueProcessingTime                    71.1          49          94        13.0          10
+metricConsumeSyncQueueResolveProcessingTime              0.3           0           2         0.6          10
+metricConsumerConnectProcessingTime                    153.0         153         153         0.0           1
+metricEndOfCallBack                                     69.0          47          91        12.8          10
+metricOfPerfObsCallBackConsumerFunction                 69.2          48          91        12.5          10
+metricTimeDiffFromDropoffToEnd                         754.1         344        1039       233.7        1000
+metricTimeDiffFromMessageSendToDropoff                   0.3           0           5         0.5        1000
+metricTimeDiffFromMessageSendToEnd                     754.5         344        1040       233.7        1000
+```
+
+#### End-to-end
+```bash
+First request: 2018-07-12T08:31:40.506Z
+Last request: 2018-07-12T08:31:42.204Z
+Total number of lines in log file: 2000
+Number of unique matched entries: 1000
+Total difference of all requests in seconds: 1.698
+Shortest response time in second: 0.344
+Longest response time in second: 1.04
+The average transaction in second: 0.75451
+Average transactions per second: 588.9281507656066
 ```
