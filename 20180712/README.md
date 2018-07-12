@@ -131,11 +131,144 @@ The average transaction in second: 3.802
 Average transactions per second: 0.2630194634402946
 ```
 
+## Use Case 2 - Singleton Producer Fix
+
+### Testing Parameters:
+- Batch Size: 1
+- Commit Sync Enabled: True
+- Single Transfer-Prepare Message
+- Fix for Producer. Producer is not created & connected everytime a message is produced.
+
+### 1st Run:
+
+#### Ml-API-Adapter:
+```bash
+Performance Statistics   2018-07-12 15:45:00 - 2018-07-12 16:00:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+metricCommitMessageSyncProcessingTime                   11.0          11          11         0.0           1
+metricConsumeProcessingTime                              1.0           1           1         0.0           1
+metricConsumeRecursiveConsumeProcessingTime              1.0           1           1         0.0           1
+metricConsumeRecursiveProcessingTime                     0.1           0           1         0.3          42
+metricConsumeSyncQueueProcessingTime                    11.0          11          11         0.0           1
+metricConsumeSyncQueueResolveProcessingTime              1.0           1           1         0.0           1
+metricConsumerConnectProcessingTime                    142.0         142         142         0.0           1
+metricMlAPIConsumeMessage                              112.0         112         112         0.0           1
+metricMlAPIConsumeMessageForEachMsg                    111.0         111         111         0.0           1
+metricMlAPIProcessMessage                               98.0          98          98         0.0           1
+metricMlAPIStartConsume                                147.0         147         147         0.0           1
+metricProducerConnectProcessingTime                    115.0         115         115         0.0           1
+metricProducerSendMessageProcessingTime                  1.0           1           1         0.0           1
+```
+
+#### Central-Ledger:
+```bash
+Performance Statistics   2018-07-12 15:45:00 - 2018-07-12 16:00:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+metricCenLedgerCreateFulfilHandler                     683.0         683         683         0.0           1
+metricCenLedgerCreateHandler                           456.0         116        1496       459.7           7
+metricCenLedgerCreatePositionHandlers                  180.5         139         222        41.5           2
+metricCenLedgerCreatePrepareHandler                    227.7         117         343        92.3           3
+metricCenLedgerCreateRejectHandler                     324.0         324         324         0.0           1
+metricCenLedgerCreateTransferHandler                  1496.0        1496        1496         0.0           1
+metricCenLedgerPositions                              1758.0        1758        1758         0.0           1
+metricCenLedgerProduceMessage                         1108.7         653        1635       404.0           3
+metricCenLedgerRegisterAllHandlers                    3242.0        3242        3242         0.0           1
+metricCenLedgerRegisterAllPositionHandlers             368.0         368         368         0.0           1
+metricCenLedgerRegisterAllTransferHandlers            2848.0        2848        2848         0.0           1
+metricCenLedgerRegisterPositionHandlers                368.0         368         368         0.0           1
+metricCenLedgerTransferPrepare                        1218.0        1218        1218         0.0           1
+metricCenLedgerTransferTransfer                       1063.0        1063        1063         0.0           1
+metricCommitMessageSyncProcessingTime                   27.3          11          48        15.4           3
+metricConsumeProcessingTime                              0.4           0           2         0.7           7
+metricConsumeRecursiveConsumeProcessingTime              0.3           0           1         0.5           3
+metricConsumeRecursiveProcessingTime                     0.0           0           1         0.1         164
+metricConsumeSyncQueueProcessingTime                     3.0           2           4         0.8           3
+metricConsumeSyncQueueResolveProcessingTime              0.7           0           1         0.5           3
+metricConsumerConnectProcessingTime                    453.0         114        1495       460.6           7
+metricProducerConnectProcessingTime                   1103.0         650        1633       405.0           3
+metricProducerSendMessageProcessingTime                  0.3           0           1         0.5           3
+```
+#### Golden-path Transfer-Prepare:
+```bash
+First request: 2018-07-12T13:51:40.054Z
+Last request: 2018-07-12T13:51:44.569Z
+Total number of lines in log file: 10
+Number of unique matched entries: 1
+Total difference of all requests in seconds: 4.515
+Shortest response time in second: 4.515
+Longest response time in second: 4.515
+The average transaction in second: 4.515
+Average transactions per second: 0.221483942414175
+```
+
+### 2nd Run:
+
+#### Ml-API-Adapter:
+```bash
+Performance Statistics   2018-07-12 15:45:00 - 2018-07-12 16:00:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+metricCommitMessageSyncProcessingTime                   32.0          32          32         0.0           1
+metricConsumeProcessingTime                              1.0           1           1         0.0           1
+metricConsumeRecursiveConsumeProcessingTime              1.0           1           1         0.0           1
+metricConsumeRecursiveProcessingTime                     0.0           0           0         0.0          30
+metricConsumeSyncQueueProcessingTime                    10.0          10          10         0.0           1
+metricConsumeSyncQueueResolveProcessingTime              0.0           0           0         0.0           1
+metricConsumerConnectProcessingTime                    161.0         161         161         0.0           1
+metricMlAPIConsumeMessage                              119.0         119         119         0.0           1
+metricMlAPIConsumeMessageForEachMsg                    118.0         118         118         0.0           1
+metricMlAPIProcessMessage                               84.0          84          84         0.0           1
+metricMlAPIStartConsume                                169.0         169         169         0.0           1
+metricProducerConnectProcessingTime                    127.0         127         127         0.0           1
+metricProducerSendMessageProcessingTime                  1.0           1           1         0.0           1
+```
+
+#### Central-Ledger:
+```bash
+Performance Statistics   2018-07-12 15:45:00 - 2018-07-12 16:00:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+metricCenLedgerCreateFulfilHandler                     882.0         882         882         0.0           1
+metricCenLedgerCreateHandler                           468.7         109        1600       526.4           7
+metricCenLedgerCreatePositionHandlers                  119.0         110         128         9.0           2
+metricCenLedgerCreatePrepareHandler                    225.0         121         341        90.2           3
+metricCenLedgerCreateRejectHandler                    1601.0        1601        1601         0.0           1
+metricCenLedgerCreateTransferHandler                   234.0         234         234         0.0           1
+metricCenLedgerPositions                               627.0         627         627         0.0           1
+metricCenLedgerProduceMessage                          576.3         453         672        91.5           3
+metricCenLedgerRegisterAllHandlers                    3323.0        3323        3323         0.0           1
+metricCenLedgerRegisterAllPositionHandlers             243.0         243         243         0.0           1
+metricCenLedgerRegisterAllTransferHandlers            3060.0        3060        3060         0.0           1
+metricCenLedgerRegisterPositionHandlers                243.0         243         243         0.0           1
+metricCenLedgerTransferPrepare                         623.0         623         623         0.0           1
+metricCenLedgerTransferTransfer                        688.0         688         688         0.0           1
+metricCommitMessageSyncProcessingTime                   11.7           3          18         6.3           3
+metricConsumeProcessingTime                              0.1           0           1         0.3           7
+metricConsumeRecursiveConsumeProcessingTime              0.7           0           1         0.5           3
+metricConsumeRecursiveProcessingTime                     0.0           0           1         0.2         159
+metricConsumeSyncQueueProcessingTime                     2.7           2           4         0.9           3
+metricConsumeSyncQueueResolveProcessingTime              1.0           1           1         0.0           3
+metricConsumerConnectProcessingTime                    466.3         107        1596       526.1           7
+metricProducerConnectProcessingTime                    574.3         450         670        92.1           3
+metricProducerSendMessageProcessingTime                  1.0           1           1         0.0           3
+```
+#### Golden-path Transfer-Prepare:
+```bash
+First request: 2018-07-12T13:56:56.171Z
+Last request: 2018-07-12T13:56:59.324Z
+Total number of lines in log file: 10
+Number of unique matched entries: 1
+Total difference of all requests in seconds: 3.153
+Shortest response time in second: 3.153
+Longest response time in second: 3.153
+The average transaction in second: 3.153
+Average transactions per second: 0.3171582619727244
+```
+
 ## Use Case # - TBC
 
 ### Testing Parameters:
-- Batch Size: 1000
+- Batch Size: 1
 - Commit Sync Enabled: True
+- Single Transfer-Prepare Message
 
 ### 1st Run:
 
