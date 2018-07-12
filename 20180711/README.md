@@ -271,7 +271,7 @@ Average transactions per second: 653.59477124183
 - Batch Size: 1000
 - Commit Sync Enabled: False _(manually commented out the commit lines in the consumer)_
 - Auto-commit enabled _(see config.json)_
-- Auto-commit-internal-ms: 100 _(see config.json)_
+- Auto-commit-internal-ms: 200 _(see config.json)_
 
 ### 1st Run:
 
