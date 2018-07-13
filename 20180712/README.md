@@ -1,4 +1,9 @@
-# 20180712T12h00
+# 20180712
+
+Mojaloop Golden Path Transfer-prepare:
+- JMeter used to emulate DFSP by sending a single Transfer Prepare Request
+- Transfer Prepare Request sent to ML-API-Adapter
+- Notification Received by ML-API-Adapter with Callback to a Mockserver (emulating DFSP)
 
 ## Use Case 1 - Base-line
 

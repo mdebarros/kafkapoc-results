@@ -32,6 +32,9 @@ Result store: [https://github.com/mdebarros/kafkapoc-results](https://github.com
 ### 20180711T17h00:
 - [CommitSync Comparison Tests](./20180711/README.md)
 
+### 20180712:
+- [Mojaloop Transfer Prepare Results with single message](./20180712/README.md)
+
 ### 20180713:
 - [Mojaloop Transfer Prepare Results with Load](./20180713/README.md)
 
