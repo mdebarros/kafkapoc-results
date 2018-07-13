@@ -201,3 +201,8 @@ Average transactions per second: 5.01975862437253
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | HTTP Request | 101 | 12 | 6 | 153 | 14.73 | 0.000% | 5.1/sec | 0.64 | 6.60 | 130.0 |
 | TOTAL | 101 | 12 | 6 | 153 | 14.73 | 0.000% | 5.1/sec | 0.64 | 6.60 | 130.0 |
+
+First Header | Second Header
+------------ | -------------
+Content from cell 1 | Content from cell 2
+Content in the first column | Content in the second column
