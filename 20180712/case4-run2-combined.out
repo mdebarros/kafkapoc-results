@@ -1,0 +1,10 @@
+2018-07-13T07:40:20.067Z - 2018-07-13T07:40:20.067Z - infodebug: guid=ad9e2b18-bac8-3b9e-a9e7-345eb9730e29:uuid - startTransferPrepareAPI:process
+2018-07-13T07:40:20.285Z - info: guid=ad9e2b18-bac8-3b9e-a9e7-345eb9730e29:uuid - endTransferPrepareAPI:process
+2018-07-13T07:40:21.265Z - info: guid=ad9e2b18-bac8-3b9e-a9e7-345eb9730e29:uuid - startPrepareTransferHandler:process
+2018-07-13T07:40:21.463Z - info: guid=ad9e2b18-bac8-3b9e-a9e7-345eb9730e29:uuid - endPrepareTransferHandler:process
+2018-07-13T07:40:22.378Z - info: guid=ad9e2b18-bac8-3b9e-a9e7-345eb9730e29:uuid - startPositionHandler:process
+2018-07-13T07:40:22.418Z - info: guid=ad9e2b18-bac8-3b9e-a9e7-345eb9730e29:uuid - endPositionHandler:process
+2018-07-13T07:40:22.427Z - info: guid=ad9e2b18-bac8-3b9e-a9e7-345eb9730e29:uuid - startTransferHandler:process
+2018-07-13T07:40:22.429Z - info: guid=ad9e2b18-bac8-3b9e-a9e7-345eb9730e29:uuid - endTransferHandler:process
+2018-07-13T07:40:22.438Z - info: guid=ad9e2b18-bac8-3b9e-a9e7-345eb9730e29:uuid - startNotificationHandler:process
+2018-07-13T07:40:22.475Z - info: guid=ad9e2b18-bac8-3b9e-a9e7-345eb9730e29:uuid - endNotificationHandler:process
