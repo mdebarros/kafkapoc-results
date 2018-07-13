@@ -5,7 +5,8 @@
 ### Testing Parameters:
 - Batch Size: 1
 - JMeter Threads: 1
-- Commit Sync Enabled: True
+- Commit Sync Enabled: false
+- Auto-commit enabled: true
 - 100 Transfer-Prepare Messages
 
 ### 1st Run:
@@ -129,7 +130,8 @@ Average transactions per second: 8.191240387830156
 ### Testing Parameters:
 - Batch Size: 1
 - JMeter Threads: 10
-- Commit Sync Enabled: True
+- Commit Sync Enabled: false
+- Auto-commit enabled: true
 - 100 Transfer-Prepare Messages
 
 ### 1st Run:
