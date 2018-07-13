@@ -1,11 +1,17 @@
 # 20180713
 
+Mojaloop Golden Path Transfer-prepare:
+- JMeter used to emulate DFSP with different load scenarios (described by each use-case)
+- Transfer Prepare Request sent to ML-API-Adapter
+- Notification Received by ML-API-Adapter with Callback to a Mockserver (emulating DFSP)
+
 ## Use Case 1 - Singleton Producer Fix + Auto-commit enabled + 100 Consecutive messages
 
 ### Testing Parameters:
 - Batch Size: 1
 - JMeter Threads: 1
-- Commit Sync Enabled: True
+- Commit Sync Enabled: false
+- Auto-commit enabled: true
 - 100 Transfer-Prepare Messages
 
 ### 1st Run:
@@ -66,6 +72,7 @@ Average transactions per second: 5.224180492565589
 ```
 
 #### JMeter
+
 | Label | # Samples | Average | Min | Max | Std. Dev. | Error % | Throughput | Received KB/sec | Sent KB/sec | Avg. Bytes |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
 | HTTP Request | 201 | 11 | 6 | 150 | 14.22 | 0.000% | 58.2/min | 0.12 | 1.27 | 130.0 |
@@ -118,6 +125,7 @@ Average transactions per second: 8.191240387830156
 ```
 
 #### JMeter
+
 | Label | # Samples | Average | Min | Max | Std. Dev. | Error % | Throughput | Received KB/sec | Sent KB/sec | Avg. Bytes |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
 | HTTP Request | 101 | 17 | 7 | 254 | 24.72 | 0.000% | 7.8/sec | 0.99 | 10.15 | 130.0 |
@@ -129,8 +137,9 @@ Average transactions per second: 8.191240387830156
 ### Testing Parameters:
 - Batch Size: 1
 - JMeter Threads: 10
-- Commit Sync Enabled: True
-- 100 Transfer-Prepare Messages
+- Commit Sync Enabled: false
+- Auto-commit enabled: true
+- 100 Transfer-Prepare Messages (10 per thread)
 
 ### 1st Run:
 
@@ -190,7 +199,8 @@ Average transactions per second: 5.01975862437253
 ```
 
 #### JMeter
+
 | Label | # Samples | Average | Min | Max | Std. Dev. | Error % | Throughput | Received KB/sec | Sent KB/sec | Avg. Bytes |
-| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | HTTP Request | 101 | 12 | 6 | 153 | 14.73 | 0.000% | 5.1/sec | 0.64 | 6.60 | 130.0 |
 | TOTAL | 101 | 12 | 6 | 153 | 14.73 | 0.000% | 5.1/sec | 0.64 | 6.60 | 130.0 |
