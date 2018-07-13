@@ -197,7 +197,7 @@ Average transactions per second: 5.01975862437253
 ```
 
 #### JMeter
-| Label | # Samples | Average | Min | Max | Std. Dev. | Error % | Throughput | Received KB/sec | Sent KB/sec | Avg. Bytes |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| HTTP Request | 101 | 12 | 6 | 153 | 14.73 | 0.000% | 5.1/sec | 0.64 | 6.60 | 130.0 |
-| TOTAL | 101 | 12 | 6 | 153 | 14.73 | 0.000% | 5.1/sec | 0.64 | 6.60 | 130.0 |
+Label | # Samples | Average | Min | Max | Std. Dev. | Error % | Throughput | Received KB/sec | Sent KB/sec | Avg. Bytes
+---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----
+HTTP Request | 101 | 12 | 6 | 153 | 14.73 | 0.000% | 5.1/sec | 0.64 | 6.60 | 130.0
+TOTAL | 101 | 12 | 6 | 153 | 14.73 | 0.000% | 5.1/sec | 0.64 | 6.60 | 130.0
