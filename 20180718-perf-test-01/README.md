@@ -150,8 +150,7 @@ metricProducerSendMessageProcessingTime                  0.3           0        
 ### 1st run
 
 #### end-to-end
-```bash
-node ../tools/loadTestingParser.js -n 10 -f combined.out            
+```bash    
 First request: 2018-07-18T09:11:02.469Z
 Last request: 2018-07-18T09:11:30.392Z
 Total number of lines in log file: 1010
