@@ -1,5 +1,7 @@
 # 20180718T17h46 - Perf-test-02
 
+![AWS Cloudwatch for Perf-test-02](./aws-dashboard-perf-test-02.png)
+
 ## Use Case 1 - Base-line single message with Auto-commit enabled
 
 ### Testing Parameters:
