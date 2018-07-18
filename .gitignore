@@ -10,3 +10,4 @@ jspm_packages
 
 # Ignore environment specific details
 scripts/env.sh
+scripts/env*.sh
