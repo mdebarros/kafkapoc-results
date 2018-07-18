@@ -452,39 +452,137 @@ TOTAL | 101 | 17 | 4 | 209 | 21.38 | 0.000% | 7.33266 | 0.93 | 9.59 | 130.0
 
 #### end-to-end
 ```bash
-
+First request: 2018-07-18T12:05:14.004Z
+Last request: 2018-07-18T12:05:46.380Z
+Total number of lines in log file: 1010
+Number of unique matched entries: 101
+Total difference of all requests in seconds: 32.376
+Shortest response time in second: 0.374
+Longest response time in second: 17.126
+The average transaction in second: 9.327138613861385
+Average transactions per second: 3.119594761551767
 ```
 
 #### ml-api-adapter
 ```bash
-
+Performance Statistics   2018-07-18 14:00:00 - 2018-07-18 14:15:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+metricConsumeProcessingTime                              1.0           1           1         0.0           1
+metricConsumeRecursiveConsumeProcessingTime              0.4           0           5         0.8         101
+metricConsumeRecursiveProcessingTime                     0.0           0           1         0.2         156
+metricConsumeSyncQueueProcessingTime                     1.7           0          16         1.9         101
+metricConsumeSyncQueueResolveProcessingTime              0.3           0           2         0.5         101
+metricConsumerConnectProcessingTime                    210.0         210         210         0.0           1
+metricMlAPIConsumeMessage                               14.0           5         147        19.5         101
+metricMlAPIConsumeMessageForEachMsg                     13.5           5         144        19.4         101
+metricMlAPIProcessMessage                               12.7           5         138        18.8         101
+metricMlAPIRoutePrepare                                  5.3           0         120        11.9         101
+metricMlAPIStartConsume                                217.0         217         217         0.0           1
+metricProducerConnectProcessingTime                    110.0         110         110         0.0           1
+metricProducerSendMessageProcessingTime                  0.9           0           7         1.3         101
 ```
 
 #### central-ledger
 ```bash
-
+Performance Statistics   2018-07-18 14:00:00 - 2018-07-18 14:15:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+metricCenLedgerCreateFulfilHandler                     575.0         575         575         0.0           1
+metricCenLedgerCreateHandler                           487.9         107        1586       477.1           7
+metricCenLedgerCreatePositionHandlers                  210.5         208         213         2.5           2
+metricCenLedgerCreatePrepareHandler                    210.3         107         317        85.8           3
+metricCenLedgerCreateRejectHandler                     523.0         523         523         0.0           1
+metricCenLedgerCreateTransferHandler                  1586.0        1586        1586         0.0           1
+metricCenLedgerPositions                                14.8           6          89        11.7         101
+metricCenLedgerProduceMessage                            5.6           0        1023        58.6         303
+metricCenLedgerRegisterAllHandlers                    3468.0        3468        3468         0.0           1
+metricCenLedgerRegisterAllPositionHandlers             424.0         424         424         0.0           1
+metricCenLedgerRegisterAllTransferHandlers            3002.0        3002        3002         0.0           1
+metricCenLedgerRegisterPositionHandlers                424.0         424         424         0.0           1
+metricCenLedgerTransferPrepare                          85.0          26        1219       117.6         101
+metricCenLedgerTransferTransfer                          4.9           0          28         4.3         101
+metricConsumeProcessingTime                              0.3           0           2         0.7           7
+metricConsumeRecursiveConsumeProcessingTime              0.2           0           5         0.5         303
+metricConsumeRecursiveProcessingTime                     0.0           0           3         0.2         610
+metricConsumeSyncQueueProcessingTime                     1.5           0          13         1.7         303
+metricConsumeSyncQueueResolveProcessingTime              0.6           0           9         1.1         303
+metricConsumerConnectProcessingTime                    486.6         106        1585       477.5           7
+metricProducerConnectProcessingTime                   1019.0        1019        1019         0.0           1
+metricProducerSendMessageProcessingTime                  0.7           0          14         1.5         303
 ```
 
 #### JMeter
+
+Label | # Samples | Average | Min | Max | Std. Dev. | Error % | Throughput | Received KB/sec | Sent KB/sec | Avg. Bytes
+--- | --- | --- | --- | --- | --- | --- | --- | --- | --- | ---
+HTTP Request | 101 | 15 | 4 | 179 | 17.74 | 0.000% | 7.58885 | 0.96 | 9.92 | 130.0
+TOTAL | 101 | 15 | 4 | 179 | 17.74 | 0.000% | 7.58885 | 0.96 | 9.92 | 130.0
 
 
 ### 2nd run
 
 #### end-to-end
 ```bash
-
+First request: 2018-07-18T12:11:01.855Z
+Last request: 2018-07-18T12:11:29.887Z
+Total number of lines in log file: 1010
+Number of unique matched entries: 101
+Total difference of all requests in seconds: 28.032
+Shortest response time in second: 0.164
+Longest response time in second: 16.591
+The average transaction in second: 9.193752475247525
+Average transactions per second: 3.603025114155251
 ```
 
 #### ml-api-adapter
 ```bash
-
+Performance Statistics   2018-07-18 14:00:00 - 2018-07-18 14:15:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+metricConsumeProcessingTime                              1.0           1           1         0.0           1
+metricConsumeRecursiveConsumeProcessingTime              0.4           0           8         1.1         101
+metricConsumeRecursiveProcessingTime                     0.0           0           3         0.3         213
+metricConsumeSyncQueueProcessingTime                     1.3           0           9         1.1         101
+metricConsumeSyncQueueResolveProcessingTime              0.2           0           3         0.5         101
+metricConsumerConnectProcessingTime                    206.0         206         206         0.0           1
+metricMlAPIConsumeMessage                               10.7           5          83        11.8         101
+metricMlAPIConsumeMessageForEachMsg                     10.3           5          83        11.8         101
+metricMlAPIProcessMessage                                9.8           5          81        11.1         101
+metricMlAPIRoutePrepare                                  4.5           0         110        10.8         101
+metricMlAPIStartConsume                                215.0         215         215         0.0           1
+metricProducerConnectProcessingTime                    106.0         106         106         0.0           1
+metricProducerSendMessageProcessingTime                  0.9           0           8         1.3         101
 ```
 
 #### central-ledger
 ```bash
-
+Performance Statistics   2018-07-18 14:00:00 - 2018-07-18 14:15:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+metricCenLedgerCreateFulfilHandler                     576.0         576         576         0.0           1
+metricCenLedgerCreateHandler                           431.4         110        1385       420.4           7
+metricCenLedgerCreatePositionHandlers                  161.0         116         206        45.0           2
+metricCenLedgerCreatePrepareHandler                    210.3         110         317        84.6           3
+metricCenLedgerCreateRejectHandler                     425.0         425         425         0.0           1
+metricCenLedgerCreateTransferHandler                  1385.0        1385        1385         0.0           1
+metricCenLedgerPositions                                14.4           6          45         7.8         101
+metricCenLedgerProduceMessage                            5.5           0         948        54.3         303
+metricCenLedgerRegisterAllHandlers                    3076.0        3076        3076         0.0           1
+metricCenLedgerRegisterAllPositionHandlers             325.0         325         325         0.0           1
+metricCenLedgerRegisterAllTransferHandlers            2705.0        2705        2705         0.0           1
+metricCenLedgerRegisterPositionHandlers                325.0         325         325         0.0           1
+metricCenLedgerTransferPrepare                          87.7          32        1146       109.5         101
+metricCenLedgerTransferTransfer                          5.2           0          24         4.4         101
+metricConsumeProcessingTime                              0.1           0           1         0.3           7
+metricConsumeRecursiveConsumeProcessingTime              0.2           0           3         0.5         303
+metricConsumeRecursiveProcessingTime                     0.0           0           5         0.3         859
+metricConsumeSyncQueueProcessingTime                     1.6           0          22         2.1         303
+metricConsumeSyncQueueResolveProcessingTime              0.8           0          16         1.5         303
+metricConsumerConnectProcessingTime                    429.7         108        1384       420.9           7
+metricProducerConnectProcessingTime                    945.0         945         945         0.0           1
+metricProducerSendMessageProcessingTime                  0.6           0           9         1.3         303
 ```
 
 #### JMeter
 
-
+Label | # Samples | Average | Min | Max | Std. Dev. | Error % | Throughput | Received KB/sec | Sent KB/sec | Avg. Bytes
+--- | --- | --- | --- | --- | --- | --- | --- | --- | --- | ---
+HTTP Request | 101 | 22 | 4 | 206 | 24.47 | 0.000% | 6.59398 | 0.84 | 8.62 | 130.0
+TOTAL | 101 | 22 | 4 | 206 | 24.47 | 0.000% | 6.59398 | 0.84 | 8.62 | 130.0
