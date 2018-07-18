@@ -1,8 +1,9 @@
-# 20180718T17h46
+# 20180718T17h46 - Perf-test-01
 
 ## Use Case 1 - Base-line single message with Auto-commit enabled
 
 ### Testing Parameters:
+- AWS: 1x m4.xlarge
 - 1 Transfer-Prepare Messages
 - Batch Size: 1
 - JMeter Threads: 1
@@ -138,6 +139,7 @@ metricProducerSendMessageProcessingTime                  0.3           0        
 ## Use Case 2 - Base-line 100 messages with Auto-commit enabled + manual commits disabled
 
 ### Testing Parameters:
+- AWS: 1x m4.xlarge
 - Batch Size: 1
 - JMeter Threads: 10
 - 100 Transfer-Prepare Messages (10 per thread)
@@ -287,6 +289,7 @@ TOTAL | 101 | 19 | 4 | 244 | 24.14 | 0.000% | 6.23919 | 0.79 | 8.16 | 130.0
 ## Use Case 3 - Base-line 100 messages with Auto-commit disabled + manual commits enabled
 
 ### Testing Parameters:
+- AWS: 1x m4.xlarge
 - Batch Size: 1
 - JMeter Threads: 10
 - 100 Transfer-Prepare Messages (10 per thread)
@@ -441,6 +444,7 @@ TOTAL | 101 | 17 | 4 | 209 | 21.38 | 0.000% | 7.33266 | 0.93 | 9.59 | 130.0
 ## Use Case 4 - Base-line 100 messages with Auto-commit disabled + manual commits disabled
 
 ### Testing Parameters:
+- AWS: 1x m4.xlarge
 - Batch Size: 1
 - JMeter Threads: 10
 - 100 Transfer-Prepare Messages (10 per thread)
