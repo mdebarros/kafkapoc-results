@@ -1,5 +1,11 @@
 # 20180718T17h46 - Perf-test-02
 
+## Summary of Findings
+*Use Case 3* - On average we are losing 2 TPS due to manual commits with every message, and increasing the longest response time by around 5s.
+
+*Use Case 2 vs Use Case 4* - No substantial difference between enabling auto-commits with 200ms commit interval vs disabling commits all-together.
+
+
 ![AWS Cloudwatch for Perf-test-02](./aws-dashboard-perf-test-02.png)
 
 ## Use Case 1 - Base-line single message with Auto-commit enabled
