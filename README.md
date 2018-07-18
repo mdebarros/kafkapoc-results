@@ -38,6 +38,9 @@ Result store: [https://github.com/mdebarros/kafkapoc-results](https://github.com
 ### 20180713:
 - [Mojaloop Transfer Prepare Results with Load](./20180713/README.md)
 
+### 20180718:
+- [Mojaloop Transfer Prepare Results on AWS](./20180718/README.md)
+
 ### Findings:
 - [Recommended Kafka Configuration](./endtoend-20180704T18h30/#findings)
 
