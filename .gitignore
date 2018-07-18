@@ -7,3 +7,6 @@ jspm_packages
 # IntelliJ #
 # --------------- #
 .idea/
+
+# Ignore environment specific details
+scripts/env.sh
