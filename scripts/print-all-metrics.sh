@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-echo "Loading env vars..."
-source env.sh
+#echo "Loading env vars..."
+#source env.sh
 
 echo
 echo "*********************************************************************"
