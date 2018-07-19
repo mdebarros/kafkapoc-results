@@ -6,7 +6,7 @@
 *Use Case 2 vs Use Case 4* - No substantial difference between enabling auto-commits with 200ms commit interval vs disabling commits all-together.
 
 
-![AWS Cloudwatch for Perf-test-02](./aws-dashboard-perf-test-02.png)
+![AWS Cloudwatch for Perf-test-02 for UC1-4](./aws-dashboard-perf-test-02-UC1-4.png)
 
 ## Use Case 1 - Base-line single message with Auto-commit enabled
 
@@ -599,6 +599,9 @@ Label | # Samples | Average | Min | Max | Std. Dev. | Error % | Throughput | Rec
 HTTP Request | 100 | 9 | 3 | 155 | 15.62 | 0.000% | 51.86722 | 6.58 | 67.82 | 130.0
 TOTAL | 100 | 9 | 3 | 155 | 15.62 | 0.000% | 51.86722 | 6.58 | 67.82 | 130.0
 
+
+
+![AWS Cloudwatch for Perf-test-02 for UC5-6](./aws-dashboard-perf-test-02-UC5-6.png)
 
 ## Use Case 5 - Base-line 100 messages with Auto-commit enabled + manual commits disabled
 
