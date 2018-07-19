@@ -18,6 +18,7 @@
 - Commit Sync Enabled: false
 - Auto-commit enabled: true
 - Auto-commit interval: 200
+- Kafka version: v0.1.0
 
 ### 1st run
 
@@ -153,6 +154,7 @@ metricProducerSendMessageProcessingTime                  0.3           0        
 - Commit Sync Enabled: false
 - Auto-commit enabled: true
 - Auto-commit interval: 200
+- Kafka version: v0.1.0
 
 ### 1st run
 
@@ -302,6 +304,7 @@ TOTAL | 100 | 11 | 3 | 282 | 28.23 | 0.000% | 52.82620 | 6.71 | 69.08 | 130.0
 - Commit Sync Enabled: true
 - Auto-commit enabled: false
 - Auto-commit interval: 200 (n/a)
+- Kafka version: v0.1.0
 
 ### 1st run
 
@@ -455,6 +458,7 @@ TOTAL | 100 | 10 | 3 | 164 | 16.34 | 0.000% | 53.44735 | 6.79 | 69.89 | 130.0
 - Commit Sync Enabled: false
 - Auto-commit enabled: false
 - Auto-commit interval: 200 (n/a)
+- Kafka version: v0.1.0
 
 ### 1st run
 
@@ -595,3 +599,281 @@ Label | # Samples | Average | Min | Max | Std. Dev. | Error % | Throughput | Rec
 HTTP Request | 100 | 9 | 3 | 155 | 15.62 | 0.000% | 51.86722 | 6.58 | 67.82 | 130.0
 TOTAL | 100 | 9 | 3 | 155 | 15.62 | 0.000% | 51.86722 | 6.58 | 67.82 | 130.0
 
+
+## Use Case 5 - Base-line 100 messages with Auto-commit enabled + manual commits disabled
+
+### Testing Parameters:
+- AWS: 1x m4.2xlarge
+- Batch Size: 1
+- JMeter Threads: 10
+- 100 Transfer-Prepare Messages (10 per thread)
+- Commit Sync Enabled: false
+- Auto-commit enabled: true
+- Auto-commit interval: 200
+- Kafka version: v1.1.0
+
+### 1st run
+
+#### end-to-end
+```bash
+First request: 2018-07-19T11:40:51.015Z
+Last request: 2018-07-19T11:41:05.696Z
+Total number of lines in log file: 1000
+Number of unique matched entries: 100
+Total difference of all requests in seconds: 14.681
+Shortest response time in second: 1.266
+Longest response time in second: 12.854
+The average transaction in second: 7.26834
+Average transactions per second: 6.8115251004699955
+```
+
+#### ml-api-adapter
+```bash
+Performance Statistics   2018-07-19 13:30:00 - 2018-07-19 13:45:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+metricConsumeProcessingTime                              2.0           2           2         0.0           1
+metricConsumeRecursiveConsumeProcessingTime              0.2           0           1         0.4         100
+metricConsumeRecursiveProcessingTime                     0.1           0           1         0.2         118
+metricConsumeSyncQueueProcessingTime                     1.2           0          13         1.4         100
+metricConsumeSyncQueueResolveProcessingTime              0.2           0           1         0.4         100
+metricConsumerConnectProcessingTime                    204.0         204         204         0.0           1
+metricMlAPIConsumeMessage                                6.7           4          27         2.7         100
+metricMlAPIConsumeMessageForEachMsg                      6.4           4          26         2.7         100
+metricMlAPIProcessMessage                                5.9           3          25         2.7         100
+metricMlAPIRoutePrepare                                  2.5           0         118        11.6         100
+metricMlAPIStartConsume                                212.0         212         212         0.0           1
+metricProducerConnectProcessingTime                    115.0         115         115         0.0           1
+metricProducerSendMessageProcessingTime                  0.2           0           5         0.6         100
+```
+
+#### central-ledger
+```bash
+Performance Statistics   2018-07-19 13:30:00 - 2018-07-19 13:45:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+metricCenLedgerCreateFulfilHandler                     595.0         595         595         0.0           1
+metricCenLedgerCreateHandler                           530.3         203        1198       413.8           7
+metricCenLedgerCreatePositionHandlers                  207.5         204         211         3.5           2
+metricCenLedgerCreatePrepareHandler                    271.3         203         408        96.6           3
+metricCenLedgerCreateRejectHandler                    1198.0        1198        1198         0.0           1
+metricCenLedgerCreateTransferHandler                  1100.0        1100        1100         0.0           1
+metricCenLedgerPositions                                10.6           5          70        10.1         100
+metricCenLedgerProduceMessage                            1.2           0         108         6.2         300
+metricCenLedgerRegisterAllHandlers                    3769.0        3769        3769         0.0           1
+metricCenLedgerRegisterAllPositionHandlers             419.0         419         419         0.0           1
+metricCenLedgerRegisterAllTransferHandlers            3304.0        3304        3304         0.0           1
+metricCenLedgerRegisterPositionHandlers                419.0         419         419         0.0           1
+metricCenLedgerTransferPrepare                          38.8          21         206        21.8         100
+metricCenLedgerTransferTransfer                          1.4           0           7         0.9         100
+metricConsumeProcessingTime                              0.3           0           1         0.5           7
+metricConsumeRecursiveConsumeProcessingTime              0.1           0           1         0.2         300
+metricConsumeRecursiveProcessingTime                     0.0           0           1         0.1         425
+metricConsumeSyncQueueProcessingTime                     0.6           0           3         0.6         300
+metricConsumeSyncQueueResolveProcessingTime              0.1           0           3         0.4         300
+metricConsumerConnectProcessingTime                    528.9         202        1197       414.1           7
+metricProducerConnectProcessingTime                    105.0         105         105         0.0           1
+metricProducerSendMessageProcessingTime                  0.2           0           3         0.5         300
+```
+
+#### JMeter
+
+Label | # Samples | Average | Min | Max | Std. Dev. | Error % | Throughput | Received KB/sec | Sent KB/sec | Avg. Bytes
+--- | --- | --- | --- | --- | --- | --- | --- | --- | --- | ---
+HTTP Request | 100 | 8 | 3 | 162 | 16.06 | 0.000% | 53.53319 | 6.80 | 70.00 | 130.0
+TOTAL | 100 | 8 | 3 | 162 | 16.06 | 0.000% | 53.53319 | 6.80 | 70.00 | 130.0
+
+### 2nd run
+
+#### end-to-end
+```bash
+First request: 2018-07-19T11:45:22.581Z
+Last request: 2018-07-19T11:45:37.561Z
+Total number of lines in log file: 1000
+Number of unique matched entries: 100
+Total difference of all requests in seconds: 14.98
+Shortest response time in second: 2.175
+Longest response time in second: 13.144
+The average transaction in second: 8.091520000000001
+Average transactions per second: 6.675567423230975
+```
+
+#### ml-api-adapter
+```bash
+Performance Statistics   2018-07-19 13:45:00 - 2018-07-19 14:00:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+metricConsumeProcessingTime                              1.0           1           1         0.0           1
+metricConsumeRecursiveConsumeProcessingTime              0.2           0           2         0.4         100
+metricConsumeRecursiveProcessingTime                     0.1           0           8         0.7         117
+metricConsumeSyncQueueProcessingTime                     1.1           0           7         1.0         100
+metricConsumeSyncQueueResolveProcessingTime              0.2           0           9         1.0         100
+metricConsumerConnectProcessingTime                    204.0         204         204         0.0           1
+metricMlAPIConsumeMessage                                6.2           4          27         2.9         100
+metricMlAPIConsumeMessageForEachMsg                      5.8           3          26         2.9         100
+metricMlAPIProcessMessage                                5.3           3          25         2.8         100
+metricMlAPIRoutePrepare                                  3.3           0         127        13.0         100
+metricMlAPIStartConsume                                210.0         210         210         0.0           1
+metricProducerConnectProcessingTime                    123.0         123         123         0.0           1
+metricProducerSendMessageProcessingTime                  0.5           0          16         1.6         100
+```
+
+#### central-ledger
+```bash
+Performance Statistics   2018-07-19 13:45:00 - 2018-07-19 14:00:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+metricCenLedgerCreateFulfilHandler                     590.0         590         590         0.0           1
+metricCenLedgerCreateHandler                           530.1         103        1297       450.3           7
+metricCenLedgerCreatePositionHandlers                  207.5         204         211         3.5           2
+metricCenLedgerCreatePrepareHandler                    205.3         103         309        84.1           3
+metricCenLedgerCreateRejectHandler                    1297.0        1297        1297         0.0           1
+metricCenLedgerCreateTransferHandler                  1105.0        1105        1105         0.0           1
+metricCenLedgerPositions                                 8.7           5          64         6.9         100
+metricCenLedgerProduceMessage                            4.1           0         992        57.1         300
+metricCenLedgerRegisterAllHandlers                    3761.0        3761        3761         0.0           1
+metricCenLedgerRegisterAllPositionHandlers             418.0         418         418         0.0           1
+metricCenLedgerRegisterAllTransferHandlers            3302.0        3302        3302         0.0           1
+metricCenLedgerRegisterPositionHandlers                418.0         418         418         0.0           1
+metricCenLedgerTransferPrepare                          47.7          21        1108       107.7         100
+metricCenLedgerTransferTransfer                          1.6           0           8         1.3         100
+```
+#### JMeter
+
+Label | # Samples | Average | Min | Max | Std. Dev. | Error % | Throughput | Received KB/sec | Sent KB/sec | Avg. Bytes
+--- | --- | --- | --- | --- | --- | --- | --- | --- | --- | ---
+HTTP Request | 100 | 9 | 3 | 163 | 16.30 | 0.000% | 53.64807 | 6.81 | 70.15 | 130.0
+TOTAL | 100 | 9 | 3 | 163 | 16.30 | 0.000% | 53.64807 | 6.81 | 70.15 | 130.0
+
+
+## Use Case 6 - Base-line single message with Auto-commit enabled
+
+### Testing Parameters:
+- AWS: 1x m4.2xlarge
+- 1 Transfer-Prepare Messages
+- Batch Size: 1
+- JMeter Threads: 1
+- Commit Sync Enabled: false
+- Auto-commit enabled: true
+- Auto-commit interval: 200
+- Kafka version: v1.1.0
+
+### 1st run
+
+#### end-to-end
+```bash
+First request: 2018-07-19T11:48:23.156Z
+Last request: 2018-07-19T11:48:24.976Z
+Total number of lines in log file: 10
+Number of unique matched entries: 1
+Total difference of all requests in seconds: 1.82
+Shortest response time in second: 1.82
+Longest response time in second: 1.82
+The average transaction in second: 1.82
+Average transactions per second: 0.5494505494505494
+```
+
+#### ml-api-adapter
+```bash
+Performance Statistics   2018-07-19 13:45:00 - 2018-07-19 14:00:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+metricConsumeProcessingTime                              1.0           1           1         0.0           1
+metricConsumeRecursiveConsumeProcessingTime              1.0           1           1         0.0           1
+metricConsumeRecursiveProcessingTime                     0.1           0           1         0.3          25
+metricConsumeSyncQueueProcessingTime                     7.0           7           7         0.0           1
+metricConsumeSyncQueueResolveProcessingTime              2.0           2           2         0.0           1
+metricConsumerConnectProcessingTime                    204.0         204         204         0.0           1
+metricMlAPIConsumeMessage                               28.0          28          28         0.0           1
+metricMlAPIConsumeMessageForEachMsg                     27.0          27          27         0.0           1
+metricMlAPIProcessMessage                               25.0          25          25         0.0           1
+metricMlAPIRoutePrepare                                230.0         230         230         0.0           1
+metricMlAPIStartConsume                                210.0         210         210         0.0           1
+metricProducerConnectProcessingTime                    226.0         226         226         0.0           1
+metricProducerSendMessageProcessingTime                  0.0           0           0         0.0           1
+```
+
+#### central-ledger
+```bash
+Performance Statistics   2018-07-19 13:45:00 - 2018-07-19 14:00:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+metricCenLedgerCreateFulfilHandler                     702.0         702         702         0.0           1
+metricCenLedgerCreateHandler                           532.3         103        1207       432.4           7
+metricCenLedgerCreatePositionHandlers                  157.5         103         212        54.5           2
+metricCenLedgerCreatePrepareHandler                    271.7         203         408        96.4           3
+metricCenLedgerCreateRejectHandler                    1208.0        1208        1208         0.0           1
+metricCenLedgerCreateTransferHandler                  1098.0        1098        1098         0.0           1
+metricCenLedgerPositions                                46.0          46          46         0.0           1
+metricCenLedgerProduceMessage                          372.3           1        1115       525.1           3
+metricCenLedgerRegisterAllHandlers                    3777.0        3777        3777         0.0           1
+metricCenLedgerRegisterAllPositionHandlers             318.0         318         318         0.0           1
+metricCenLedgerRegisterAllTransferHandlers            3417.0        3417        3417         0.0           1
+metricCenLedgerRegisterPositionHandlers                318.0         318         318         0.0           1
+metricCenLedgerTransferPrepare                        1219.0        1219        1219         0.0           1
+metricCenLedgerTransferTransfer                          1.0           1           1         0.0           1
+metricConsumeProcessingTime                              0.1           0           1         0.3           7
+metricConsumeRecursiveConsumeProcessingTime              0.3           0           1         0.5           3
+metricConsumeRecursiveProcessingTime                     0.0           0           0         0.0         105
+metricConsumeSyncQueueProcessingTime                     1.7           1           2         0.5           3
+metricConsumeSyncQueueResolveProcessingTime              0.7           0           1         0.5           3
+metricConsumerConnectProcessingTime                    530.6         102        1206       432.5           7
+metricProducerConnectProcessingTime                   1113.0        1113        1113         0.0           1
+metricProducerSendMessageProcessingTime                  0.3           0           1         0.5           3
+```
+
+### 2nd run
+
+#### end-to-end
+```bash
+First request: 2018-07-19T11:51:39.066Z
+Last request: 2018-07-19T11:51:40.831Z
+Total number of lines in log file: 10
+Number of unique matched entries: 1
+Total difference of all requests in seconds: 1.765
+Shortest response time in second: 1.765
+Longest response time in second: 1.765
+The average transaction in second: 1.765
+Average transactions per second: 0.56657223796034
+```
+
+#### ml-api-adapter
+```bash
+Performance Statistics   2018-07-19 13:45:00 - 2018-07-19 14:00:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+metricConsumeProcessingTime                              1.0           1           1         0.0           1
+metricConsumeRecursiveConsumeProcessingTime              1.0           1           1         0.0           1
+metricConsumeRecursiveProcessingTime                     0.0           0           1         0.2          65
+metricConsumeSyncQueueProcessingTime                     9.0           9           9         0.0           1
+metricConsumeSyncQueueResolveProcessingTime              7.0           7           7         0.0           1
+metricConsumerConnectProcessingTime                    205.0         205         205         0.0           1
+metricMlAPIConsumeMessage                               33.0          33          33         0.0           1
+metricMlAPIConsumeMessageForEachMsg                     31.0          31          31         0.0           1
+metricMlAPIProcessMessage                               26.0          26          26         0.0           1
+metricMlAPIRoutePrepare                                232.0         232         232         0.0           1
+metricMlAPIStartConsume                                211.0         211         211         0.0           1
+metricProducerConnectProcessingTime                    220.0         220         220         0.0           1
+metricProducerSendMessageProcessingTime                  1.0           1           1         0.0           1
+```
+
+#### central-ledger
+```bash
+Performance Statistics   2018-07-19 13:45:00 - 2018-07-19 14:00:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+metricCenLedgerCreateFulfilHandler                     589.0         589         589         0.0           1
+metricCenLedgerCreateHandler                           530.3         203        1206       414.8           7
+metricCenLedgerCreatePositionHandlers                  207.0         203         211         4.0           2
+metricCenLedgerCreatePrepareHandler                    272.3         203         409        96.6           3
+metricCenLedgerCreateRejectHandler                    1206.0        1206        1206         0.0           1
+metricCenLedgerCreateTransferHandler                  1097.0        1097        1097         0.0           1
+metricCenLedgerPositions                                72.0          72          72         0.0           1
+metricCenLedgerProduceMessage                          196.0           1         585       275.1           3
+metricCenLedgerRegisterAllHandlers                    3757.0        3757        3757         0.0           1
+metricCenLedgerRegisterAllPositionHandlers             417.0         417         417         0.0           1
+metricCenLedgerRegisterAllTransferHandlers            3301.0        3301        3301         0.0           1
+metricCenLedgerRegisterPositionHandlers                417.0         417         417         0.0           1
+metricCenLedgerTransferPrepare                         692.0         692         692         0.0           1
+metricCenLedgerTransferTransfer                          1.0           1           1         0.0           1
+metricConsumeProcessingTime                              0.1           0           1         0.3           7
+metricConsumeRecursiveConsumeProcessingTime              0.3           0           1         0.5           3
+metricConsumeRecursiveProcessingTime                     0.0           0           1         0.1         281
+metricConsumeSyncQueueProcessingTime                     1.7           1           3         0.9           3
+metricConsumeSyncQueueResolveProcessingTime              0.3           0           1         0.5           3
+metricConsumerConnectProcessingTime                    528.6         202        1205       415.4           7
+metricProducerConnectProcessingTime                    582.0         582         582         0.0           1
+metricProducerSendMessageProcessingTime                  0.7           0           1         0.5           3
+```
