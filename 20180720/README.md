@@ -31,3 +31,12 @@
 
 ### Outcomes:
 - Implement Recommendations and Findings in PI3.3 [Story #371 - Kafka Performance Issue Analysis & Investigation - Implement findings and recommendations as of PI3.2](https://github.com/mojaloop/project/issues/371)
+
+## Impact to Metrics
+Results taken from perf-test-02 on AWS tests. (Ref: [20180718T17h46 - Perf-test-02](../20180718-perf-test-02-baseline), [20180718T17h46 - Perf-test-02](../20180718-perf-test-02))
+
+Metric | Use-case | Baseline | Enhanced | % Diff | Improvement
+---- | ---- | ---- | ---- | ---- | ---- 
+Average Transaction Time in Sec	| 1 | 6.88 | 3.04 | -56% | Yes
+Average Transaction Time in Sec | 2 | 11.02 | 8.21 | -25% | Yes
+Transactions Per Second	| 2 | 4.64 | 6.51 | +40% | Yes
