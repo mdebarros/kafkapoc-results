@@ -16,7 +16,7 @@
 
 ### Code Enhancements:
 - Bug in Producers Singleton Factory that instantiates a new Producer on every sendMessage. The Singleton Factory should only instantiate the Producer if it has already not been done so. (Ref: [Issue #370](https://github.com/mojaloop/project/issues/370))
-- Enable new config to enable/disable auto-commits and/or manual-commits. [Story #371](https://github.com/mojaloop/project/issues/371)
+- Enable new config to enable/disable auto-commits and/or manual-commits. (Ref: [Story #371](https://github.com/mojaloop/project/issues/371))
     
 ### Kafka Broker Enhancements
 - Ensure that the latest version of Kafka is used. There was a notable improvement from a single message by using Kafka v1.1.0 (ref: [UC1](../20180718-perf-test-02/#use-case-1---base-line-single-message-with-auto-commit-enabled)) over v0.1.0 (Ref: [UC6](../20180718-perf-test-02/#use-case-6---base-line-single-message-with-auto-commit-enabled)).
