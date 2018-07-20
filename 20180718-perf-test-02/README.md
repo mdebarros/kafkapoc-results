@@ -892,7 +892,7 @@ metricProducerSendMessageProcessingTime                  0.7           0        
 - Auto-commit enabled: true
 - Auto-commit interval: 200
 - Kafka version: v1.1.0
-- max.in.flight.requests.per.connection: 2
+- max.in.flight.requests.per.connection: 2 (Ref: [An analysis of the impact of max.in.flight.requests.per.connection and acks on Producer performance](https://cwiki.apache.org/confluence/display/KAFKA/An+analysis+of+the+impact+of+max.in.flight.requests.per.connection+and+acks+on+Producer+performance))
 
 ### 1st run
 
