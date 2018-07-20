@@ -20,9 +20,9 @@
     - Ensure that the latest version of Kafka is used. There was a notable improvement from a single message by using Kafka v1.1.0 (ref: [UC1](../20180718-perf-test-02/#use-case-1---base-line-single-message-with-auto-commit-enabled)) over v0.1.0 (Ref: [UC6](../20180718-perf-test-02/#use-case-6---base-line-single-message-with-auto-commit-enabled)).
     
 - Future avenues of exploration:
-    - Test impact of Batch Processing on Mojaloop Golden-path Transfer-prepare
-    - Test impact of multi-threaded processing of messages on non-position consumers on Mojaloop Golden-path Transfer-prepare
-    - Test impact of increased affinity on non-position consumers on Mojaloop Golden-path Transfer-prepare
-    - Test impact of Java vs Node
+    - Test impact of Batch Processing on Mojaloop Golden-path Transfer-prepare (Ref: [Story #362](https://github.com/mojaloop/project/issues/362))
+    - Test impact of multi-threaded processing of messages on non-position consumers on Mojaloop Golden-path Transfer-prepare (Ref: [Story #366](https://github.com/mojaloop/project/issues/366))
+    - Test impact of increased affinity on non-position consumers on Mojaloop Golden-path Transfer-prepare (Ref: [Story #364](https://github.com/mojaloop/project/issues/364))
+    - Test impact of Java vs Node (Ref: [Story #369](https://github.com/mojaloop/project/issues/369))
     - Test impact of a managed Kafka Broker (remove any possible limitation or bottlenecks from self-hosted deployments)
-    - Implement native Kafka EOS capabilities once it has been introduced to NodeJs Kafka libraries (Ref: [Github Issue #368](https://github.com/mojaloop/project/issues/368))
+    - Implement native Kafka EOS capabilities once it has been introduced to NodeJs Kafka libraries (Ref: [Story #368](https://github.com/mojaloop/project/issues/368))
