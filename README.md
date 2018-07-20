@@ -4,6 +4,10 @@ Results based on the following projects:
 - [https://github.com/mdebarros/kafkapoc](https://github.com/mdebarros/kafkapoc)
 - [https://github.com/mdebarros/central-services-shared](https://github.com/mdebarros/central-services-shared/tree/feature/perfAnalysis) _(branch *perfAnalysis*)_
 
+## Recommendations & Findings:
+ - [Recommended Kafka Configuration](./endtoend-20180704T18h30/#findings)
+ - [Recommendations & Findings as of PI3.2](./20180720)
+ 
 ## Performance Results Collected
 Result store: [https://github.com/mdebarros/kafkapoc-results](https://github.com/mdebarros/kafkapoc-results)
 
@@ -41,10 +45,6 @@ Result store: [https://github.com/mdebarros/kafkapoc-results](https://github.com
 ### 20180718:
 <!-- - [Mojaloop Transfer Prepare Results on AWS perf-test-01](20180718-perf-test-01/README.md) -->
 - [Mojaloop Transfer Prepare Results on AWS perf-test-02](20180718-perf-test-02/README.md)
-
-### Findings:
-- [Recommended Kafka Configuration](./endtoend-20180704T18h30/#findings)
-- [Recommendations & Findings as of PI3.2](./20180720)
 
 ## Description of Perf4js Metrics Collected
 
