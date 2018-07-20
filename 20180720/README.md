@@ -1,7 +1,7 @@
 ## Recommendations & Findings as of PI3.2
 
 ### Kafka Client Lib 
-(Ref: [Recommended Kafka Configuration](./endtoend-20180704T18h30/#findings))
+(Ref: [Recommended Kafka Configuration](../endtoend-20180704T18h30/#findings))
 - Config changes to the Consumer (in order of impact):
     - `"socket.blocking.max.ms": 1`: This added an additional 1m for socket connection. This mainly impacted the Producer performance, but did improve the Consumer.
     - `"fetch.wait.max.ms": 1`: Reduced the fetch wait time to `1ms`. Note that this may impact CPU on Kafka, and may need to be increased to around `100ms`. 
