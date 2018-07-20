@@ -16,6 +16,7 @@
 
 ### Code Enhancements:
 - Bug in Producers Singleton Factory that instantiates a new Producer on every sendMessage. The Singleton Factory should only instantiate the Producer if it has already not been done so. (Ref: [Issue #370](https://github.com/mojaloop/project/issues/370))
+- Enable new config to enable/disable auto-commits and/or manual-commits. [Story #371](https://github.com/mojaloop/project/issues/371)
     
 ### Kafka Broker Enhancements
 - Ensure that the latest version of Kafka is used. There was a notable improvement from a single message by using Kafka v1.1.0 (ref: [UC1](../20180718-perf-test-02/#use-case-1---base-line-single-message-with-auto-commit-enabled)) over v0.1.0 (Ref: [UC6](../20180718-perf-test-02/#use-case-6---base-line-single-message-with-auto-commit-enabled)).
@@ -27,3 +28,6 @@
 - Test impact of Java vs Node (Ref: [Story #369](https://github.com/mojaloop/project/issues/369))
 - Test impact of a managed Kafka Broker (remove any possible limitation or bottlenecks from self-hosted deployments)
 - Implement native Kafka EOS capabilities once it has been introduced to NodeJs Kafka libraries (Ref: [Story #368](https://github.com/mojaloop/project/issues/368))
+
+### Outcomes:
+- Implement Recommendations and Findings in PI3.3 [Story #371 - Kafka Performance Issue Analysis & Investigation - Implement findings and recommendations as of PI3.2](https://github.com/mojaloop/project/issues/371)
