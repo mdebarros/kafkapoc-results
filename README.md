@@ -5,7 +5,7 @@ Results based on the following projects:
 - [https://github.com/mdebarros/central-services-shared](https://github.com/mdebarros/central-services-shared/tree/feature/perfAnalysis) _(branch *perfAnalysis*)_
 
 ## Recommendations & Findings:
- - [Recommended Kafka Configuration](./endtoend-20180704T18h30/#findings)
+ - [Recommendations & Findings as of PI3.1](./endtoend-20180704T18h30/#findings)
  - [Recommendations & Findings as of PI3.2](./20180720)
  
 ## Performance Results Collected
