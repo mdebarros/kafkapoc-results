@@ -1032,37 +1032,3 @@ Label | # Samples | Average | Min | Max | Std. Dev. | Error % | Throughput | Rec
 HTTP Request | 100 | 12 | 3 | 389 | 38.27 | 0.000% | 53.61930 | 6.81 | 70.11 | 130.0
 TOTAL | 100 | 12 | 3 | 389 | 38.27 | 0.000% | 53.61930 | 6.81 | 70.11 | 130.0
 
-## Findings
-
-### Use Case 2: 
-- Auto-commit enabled
-- Auto-commit interval = 200ms
-- Manual-commits disabled
-TPS Run 1 -> 6.506180871828237
-TPS Run 2 -> 6.804572672836146
-
-### Use Case 3: 
-- Auto-commit disabled
-- Auto-commit interval = n/a
-- Manual-commits enabled
-
-TPS Run 1 -> 4.824857666698833
-TPS Run 2 -> 4.22761477974127
-
-### Use Case 4: 
-- Auto-commit disabled
-- Auto-commit interval = n/a
-- Manual-commits disabled
-TPS Run 1 -> 6.308352258390109
-TPS Run 2 -> 6.865302759851709
--------
-### Longest response time in second comparison:
-Use-Case 2 & 4: 12-15s
-Use-Case 3: 18-20s
-
-### Summary
-#### Use Case 3
-On average we are losing 2 TPS due to manual commits with every message, and increasing the longest response time by around 5s.
-
-#### Use Case 2 vs Use Case 4
-No substantial difference between enabling auto-commits with 200ms commit interval vs disabling commits all-together. (edited)

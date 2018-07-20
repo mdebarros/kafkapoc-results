@@ -11,7 +11,7 @@
         - `"socket.blocking.max.ms": 1`: This added an additional 1m for socket connection. Huge impact the performance of the Producer by magnitudes.
         - `"queue.buffering.max.ms": 1`: Ensure that the internal Kafka client buffer is processed within `1ms`.
     - Commits
-        - Enable auto-commit with an auto-commit-interval between 100-200ms. ~Note: that we would have to implement additional compensation logic to ensure that replays/duplicates are handled correctly. Currently the commits are done manually for EVERY message. (Ref: [Mojaloop Transfer Prepare Results with single message](./20180712/README.md), [Mojaloop Transfer Prepare Results with Load](./20180713/README.md), [Mojaloop Transfer Prepare Results on AWS perf-test-02](../20180718-perf-test-02/#Findings))
+        - Enable auto-commit with an auto-commit-interval between 100-200ms. ~Note: that we would have to implement additional compensation logic to ensure that replays/duplicates are handled correctly. Currently the commits are done manually for EVERY message. (Ref: [Mojaloop Transfer Prepare Results with single message](../20180712/README.md), [Mojaloop Transfer Prepare Results with Load](../20180713/README.md), [Mojaloop Transfer Prepare Results on AWS perf-test-02](../20180718-perf-test-02/##summary-of-findings))
 
 - Code Enhancements:
     - Bug in Producers Singleton Factory that instantiates a new Producer on every sendMessage. The Singleton Factory should only instantiate the Producer if it has already not been done so. [GitHub Issue #370](https://github.com/mojaloop/project/issues/370)
