@@ -44,6 +44,7 @@ Result store: [https://github.com/mdebarros/kafkapoc-results](https://github.com
 
 ### Findings:
 - [Recommended Kafka Configuration](./endtoend-20180704T18h30/#findings)
+- [Recommendations & Findings as of PI3.2](./20180720)
 
 ## Description of Perf4js Metrics Collected
 
