@@ -15,7 +15,7 @@
     - Enable auto-commit with an auto-commit-interval between 100-200ms. ~Note: that we would have to implement additional compensation logic to ensure that replays/duplicates are handled correctly. Currently the commits are done manually for EVERY message. (Ref: [Mojaloop Transfer Prepare Results with single message](../20180712/README.md), [Mojaloop Transfer Prepare Results with Load](../20180713/README.md), [Mojaloop Transfer Prepare Results on AWS perf-test-02](../20180718-perf-test-02/##summary-of-findings))
 
 ### Code Enhancements:
-- Bug in Producers Singleton Factory that instantiates a new Producer on every sendMessage. The Singleton Factory should only instantiate the Producer if it has already not been done so. [GitHub Issue #370](https://github.com/mojaloop/project/issues/370)
+- Bug in Producers Singleton Factory that instantiates a new Producer on every sendMessage. The Singleton Factory should only instantiate the Producer if it has already not been done so. (Ref: [GitHub Issue #370](https://github.com/mojaloop/project/issues/370))
     
 ### Kafka Broker Enhancements
 - Ensure that the latest version of Kafka is used. There was a notable improvement from a single message by using Kafka v1.1.0 (ref: [UC1](../20180718-perf-test-02/#use-case-1---base-line-single-message-with-auto-commit-enabled)) over v0.1.0 (Ref: [UC6](../20180718-perf-test-02/#use-case-6---base-line-single-message-with-auto-commit-enabled)).
