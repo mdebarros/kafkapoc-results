@@ -69,5 +69,5 @@ Average Transaction Time in Sec | 2 | 2 | 11.02 | 11.35 | 3% | No
 Transactions Per Second	| 2 | 1 | 4.64 | 6.51 | +40% | Yes
 Transactions Per Second	| 2 | 2 | 4.64 | 4.82 | +4% | Yes
 
-- Average of `34%` improvement for `Average Transaction time in Sec`
-- Average of `22%` improvement for `Transactions per Second`
+- Average of `34%` improvement for `Average Transaction time in Sec`. _(note the 2nd run on US2 looks to be an anomaly. We expect this figure to be around ~`40%`)_
+- Average of `22%` improvement for `Transactions per Second`. _(note the 2nd run on US2 looks to be an anomaly. We expect this figure to be around ~`30%`)_
