@@ -64,7 +64,7 @@ Metric | Use-case | Run | PI1 | PI3.2 | % Diff | Improvement
 Average Transaction Time in Sec	| 1 | 1 | 6.88 | 3.04 | -56% | Yes
 Average Transaction Time in Sec	| 1 | 2 | 5.97 | 2.58 | -57% | Yes
 Average Transaction Time in Sec | 2 | 1 | 11.02 | 8.21 | -25% | Yes
-Average Transaction Time in Sec | 2 | 2 | 11.02 | 11.35 | 3% | Yes
+Average Transaction Time in Sec | 2 | 2 | 11.02 | 11.35 | 3% | No
 ---- | ---- | ---- | ---- | ---- | ---- | ---- 
 Transactions Per Second	| 2 | 1 | 4.64 | 6.51 | +40% | Yes
 Transactions Per Second	| 2 | 2 | 4.64 | 4.82 | +4% | Yes
