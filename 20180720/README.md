@@ -35,8 +35,39 @@
 ## Impact to Metrics
 Results taken from perf-test-02 on AWS tests. (Ref: [20180718T17h46 - Perf-test-02](../20180718-perf-test-02-baseline), [20180718T17h46 - Perf-test-02](../20180718-perf-test-02))
 
-Metric | Use-case | Baseline | Enhanced | % Diff | Improvement
----- | ---- | ---- | ---- | ---- | ---- 
-Average Transaction Time in Sec	| 1 | 6.88 | 3.04 | -56% | Yes
-Average Transaction Time in Sec | 2 | 11.02 | 8.21 | -25% | Yes
-Transactions Per Second	| 2 | 4.64 | 6.51 | +40% | Yes
+### Comparison of Baseline PI2 vs PI3.1 Recommendations and Findings:
+
+__Note that only single message use-cases can be compared against Baseline PI2 as the Producer-fix is necessary for stability during load tests.__
+
+Metric | Use-case | Run | PI2 | PI3.1 | % Diff | Improvement
+---- | ---- | ---- | ---- | ---- | ---- | ---- 
+Average Transaction Time in Sec	| 1 | 1 | 7.31 | 6.88 | -6% | Yes
+Average Transaction Time in Sec | 2 | 2 | 7.25 | 5.97 | -18% | Yes
+
+- Average of `12%` improvement for `Average Transaction time in Sec`
+
+### Comparison of Baseline PI2 vs PI3.2 Recommendations and Findings:
+
+__Note that only single message use-cases can be compared against Baseline PI2 as the Producer-fix is necessary for stability during load tests.__
+
+Metric | Use-case | Run | PI2 | PI3.2 | % Diff | Improvement
+---- | ---- | ---- | ---- | ---- | ---- | ---- 
+Average Transaction Time in Sec	| 1 | 1 | 7.31 | 3.04 | -58% | Yes
+Average Transaction Time in Sec | 2 | 2 | 7.25 | 2.58 | -64% | Yes
+
+- Average of `61%` improvement for `Average Transaction time in Sec`
+
+### Comparison of Baseline PI3.1 vs PI3.2 Recommendations and Findings:
+
+Metric | Use-case | Run | PI1 | PI3.2 | % Diff | Improvement
+---- | ---- | ---- | ---- | ---- | ---- | ---- 
+Average Transaction Time in Sec	| 1 | 1 | 6.88 | 3.04 | -56% | Yes
+Average Transaction Time in Sec	| 1 | 2 | 5.97 | 2.58 | -57% | Yes
+Average Transaction Time in Sec | 2 | 1 | 11.02 | 8.21 | -25% | Yes
+Average Transaction Time in Sec | 2 | 2 | 11.02 | 11.35 | 3% | Yes
+---- | ---- | ---- | ---- | ---- | ---- | ---- 
+Transactions Per Second	| 2 | 1 | 4.64 | 6.51 | +40% | Yes
+Transactions Per Second	| 2 | 2 | 4.64 | 4.82 | +4% | Yes
+
+- Average of `34%` improvement for `Average Transaction time in Sec`
+- Average of `22%` improvement for `Transactions per Second`
