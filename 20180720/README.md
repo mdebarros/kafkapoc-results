@@ -33,7 +33,7 @@
 - Implement Recommendations and Findings in PI3.3 [Story #371 - Kafka Performance Issue Analysis & Investigation - Implement findings and recommendations as of PI3.2](https://github.com/mojaloop/project/issues/371)
 
 ## Impact to Metrics
-Results taken from perf-test-02 on AWS tests. (Ref: [20180718T17h46 - Perf-test-02](../20180718-perf-test-02-baseline), [20180718T17h46 - Perf-test-02](../20180718-perf-test-02))
+Results taken from perf-test-02 on AWS tests. (Ref: [20180718T17h46 - Perf-test-02-baseline](../20180718-perf-test-02-baseline), [20180718T17h46 - Perf-test-02](../20180718-perf-test-02))
 
 ### Comparison of Baseline PI2 vs PI3.1 Recommendations and Findings:
 
