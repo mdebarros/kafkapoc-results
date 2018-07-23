@@ -59,7 +59,7 @@ Average Transaction Time in Sec | 2 | 2 | 7.25 | 2.58 | -64% | Yes
 
 ### Comparison of Baseline PI3.1 vs PI3.2 Recommendations and Findings:
 
-Metric | Use-case | Run | PI1 | PI3.2 | % Diff | Improvement
+Metric | Use-case | Run | PI3.1 | PI3.2 | % Diff | Improvement
 ---- | ---- | ---- | ---- | ---- | ---- | ---- 
 Average Transaction Time in Sec	| 1 | 1 | 6.88 | 3.04 | -56% | Yes
 Average Transaction Time in Sec	| 1 | 2 | 5.97 | 2.58 | -57% | Yes
