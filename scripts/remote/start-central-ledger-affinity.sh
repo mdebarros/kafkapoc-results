@@ -2,11 +2,17 @@
 
 cd ./central-ledger
 
-echo "Starting Prepare Handler for '$FSP_LIST'..."
-nohup node ./src/handlers/index.js handler --prepare "$FSP_LIST" > console-central-ledger-prepare.log&
+echo "Starting Prepare Handler for '$FSP1'..."
+nohup node ./src/handlers/index.js handler --prepare "$FSP1" > console-central-ledger-prepare.log&
 
-echo "Starting Position Handler for '$FSP_LIST'..."
-nohup node ./src/handlers/index.js handler --position "$FSP_LIST" > console-central-ledger-position.log&
+echo "Starting Prepare Handler for '$FSP2'..."
+nohup node ./src/handlers/index.js handler --prepare "$FSP2" > console-central-ledger-prepare.log&
+
+echo "Starting Position Handler for '$FSP1'..."
+nohup node ./src/handlers/index.js handler --position "$FSP1" > console-central-ledger-position.log&
+
+echo "Starting Position Handler for '$FSP2'..."
+nohup node ./src/handlers/index.js handler --position "$FSP2" > console-central-ledger-position.log&
 
 echo "Starting Transfer Handler..."
 nohup node ./src/handlers/index.js handler --transfer > console-central-ledger-transfer.log&
