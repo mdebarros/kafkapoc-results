@@ -1,3 +1,3 @@
 #!/bin/bash
-tail -100f ./central-ledger/console-central-ledger-prepare.log
+tail -F ./central-ledger/console-central-ledger-prepare-${FSP1}.log ./central-ledger/console-central-ledger-prepare-${FSP2}.log
 
