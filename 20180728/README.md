@@ -18,7 +18,7 @@
     - `"socket.max.fails": 0`: Disable disconnects on connectivity issues
 
 ### Code Enhancements:
-- Bug in Producers Singleton Factory that instantiates a new Producer on every sendMessage. The Singleton Factory should only instantiate the Producer if it has already not been done so. (Ref: [Issue #370](https://github.com/mojaloop/project/issues/370))
+- ~~Bug in Producers Singleton Factory that instantiates a new Producer on every sendMessage. The Singleton Factory should only instantiate the Producer if it has already not been done so.~~ (Ref: [Issue #370](https://github.com/mojaloop/project/issues/370))
 - Enable new config to enable/disable auto-commits and/or manual-commits. (Ref: [Story #371](https://github.com/mojaloop/project/issues/371))
     
 ### Kafka Broker Enhancements
