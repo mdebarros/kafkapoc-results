@@ -1,0 +1,10 @@
+2018-07-27T10:49:14.169Z - [32minfo[39m: guid=7ab5c937-c12d-4897-b4cd-0c15bc75a5cb:uuid - startTransferPrepareAPI:process
+2018-07-27T10:49:14.190Z - [32minfo[39m: guid=7ab5c937-c12d-4897-b4cd-0c15bc75a5cb:uuid - endTransferPrepareAPI:process
+2018-07-27T10:49:15.283Z - [32minfo[39m: guid=7ab5c937-c12d-4897-b4cd-0c15bc75a5cb:uuid - startPrepareTransferHandler:process
+2018-07-27T10:49:15.514Z - [32minfo[39m: guid=7ab5c937-c12d-4897-b4cd-0c15bc75a5cb:uuid - endPrepareTransferHandler:process
+2018-07-27T10:49:15.622Z - [32minfo[39m: guid=7ab5c937-c12d-4897-b4cd-0c15bc75a5cb:uuid - startPositionHandler:process
+2018-07-27T10:49:15.876Z - [32minfo[39m: guid=7ab5c937-c12d-4897-b4cd-0c15bc75a5cb:uuid - endPositionHandler:process
+2018-07-27T10:49:15.881Z - [32minfo[39m: guid=7ab5c937-c12d-4897-b4cd-0c15bc75a5cb:uuid - startTransferHandler:process
+2018-07-27T10:49:15.989Z - [32minfo[39m: guid=7ab5c937-c12d-4897-b4cd-0c15bc75a5cb:uuid - endTransferHandler:process
+2018-07-27T10:49:16.103Z - [32minfo[39m: guid=7ab5c937-c12d-4897-b4cd-0c15bc75a5cb:uuid - startNotificationHandler:process
+2018-07-27T10:49:16.134Z - [32minfo[39m: guid=7ab5c937-c12d-4897-b4cd-0c15bc75a5cb:uuid - endNotificationHandler:process

@@ -1,0 +1,18 @@
+2018-07-27T10:45:30.869Z - [32minfo[39m: Handler Setup - Registering {"type":"fulfil","enabled":true}!
+2018-07-27T10:45:31.076Z - [32minfo[39m: node-rdkafka v0.11.4 ready - {"name":"topic-transfer-fulfil#consumer-1"}
+2018-07-27T10:45:31.077Z - [32minfo[39m: start[1532688330872] time[205] tag[metricConsumerConnectProcessingTime]
+2018-07-27T10:45:31.078Z - [32minfo[39m: CreateHandle::connect successful topic: topic-transfer-fulfil
+2018-07-27T10:45:31.080Z - [32minfo[39m: start[1532688331080] time[0] tag[metricConsumeRecursiveProcessingTime]
+2018-07-27T10:45:31.080Z - [32minfo[39m: start[1532688331079] time[1] tag[metricConsumeProcessingTime]
+2018-07-27T10:45:31.081Z - [32minfo[39m: start[1532688330872] time[209] tag[metricCenLedgerCreateHandler]
+2018-07-27T10:45:31.081Z - [32minfo[39m: start[1532688330870] time[211] tag[metricCenLedgerCreateFulfilHandler]
+2018-07-27T10:45:32.184Z - [32minfo[39m: start[1532688332184] time[0] tag[metricConsumeRecursiveProcessingTime]
+2018-07-27T10:45:33.874Z - [32minfo[39m: start[1532688333874] time[0] tag[metricConsumeRecursiveProcessingTime]
+2018-07-27T10:45:34.974Z - [32minfo[39m: start[1532688334974] time[0] tag[metricConsumeRecursiveProcessingTime]
+2018-07-27T10:45:36.073Z - [32minfo[39m: start[1532688336073] time[0] tag[metricConsumeRecursiveProcessingTime]
+2018-07-27T10:45:37.176Z - [32minfo[39m: start[1532688337176] time[0] tag[metricConsumeRecursiveProcessingTime]
+2018-07-27T10:45:38.276Z - [32minfo[39m: start[1532688338276] time[0] tag[metricConsumeRecursiveProcessingTime]
+2018-07-27T10:45:39.376Z - [32minfo[39m: start[1532688339376] time[0] tag[metricConsumeRecursiveProcessingTime]
+2018-07-27T10:45:40.476Z - [32minfo[39m: start[1532688340476] time[0] tag[metricConsumeRecursiveProcessingTime]
+2018-07-27T10:45:41.577Z - [32minfo[39m: start[1532688341577] time[0] tag[metricConsumeRecursiveProcessingTime]
+2018-07-27T10:45:42.678Z - [32minfo[39m: start[1532688342678] time[0] tag[metricConsumeRecursiveProcessingTime]
