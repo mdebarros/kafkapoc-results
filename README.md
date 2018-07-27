@@ -7,6 +7,7 @@ Results based on the following projects:
 ## Recommendations & Findings:
  - [Recommendations & Findings as of PI3.1](./endtoend-20180704T18h30/#findings)
  - [Recommendations & Findings as of PI3.2](./20180720)
+ - [Recommendations & Findings as of PI3.3](./20180728)
  
 ## Performance Results Collected
 Result store: [https://github.com/mdebarros/kafkapoc-results](https://github.com/mdebarros/kafkapoc-results)
