@@ -18,25 +18,25 @@
     - `"socket.max.fails": 0`: Disable disconnects on connectivity issues
 
 ### Code Enhancements:
-- [x] Bug in Producers Singleton Factory that instantiates a new Producer on every sendMessage. The Singleton Factory should only instantiate the Producer if it has already not been done so. (Ref: [Issue #370](https://github.com/mojaloop/project/issues/370))
-- [ ] Enable new config to enable/disable auto-commits and/or manual-commits. (Ref: [Story #371](https://github.com/mojaloop/project/issues/371))
+- Bug in Producers Singleton Factory that instantiates a new Producer on every sendMessage. The Singleton Factory should only instantiate the Producer if it has already not been done so. (Ref: [Issue #370](https://github.com/mojaloop/project/issues/370))
+- Enable new config to enable/disable auto-commits and/or manual-commits. (Ref: [Story #371](https://github.com/mojaloop/project/issues/371))
     
 ### Kafka Broker Enhancements
 - Ensure that the latest version of Kafka is used. There was a notable improvement from a single message by using Kafka v1.1.0 (ref: [UC1](../20180718-perf-test-02/#use-case-1---base-line-single-message-with-auto-commit-enabled)) over v0.1.0 (Ref: [UC6](../20180718-perf-test-02/#use-case-6---base-line-single-message-with-auto-commit-enabled)).
     
 ### Future avenues of exploration:
 Existing:
-- [ ] Test impact of Batch Processing on Mojaloop Golden-path Transfer-prepare (Ref: [Story #362](https://github.com/mojaloop/project/issues/362))
-- [ ] Test impact of multi-threaded processing of messages on non-position consumers on Mojaloop Golden-path Transfer-prepare (Ref: [Story #366](https://github.com/mojaloop/project/issues/366))
-- [x] ~~Test impact of increased affinity on non-position consumers on Mojaloop Golden-path Transfer-prepare~~ (Ref: [Story #364](https://github.com/mojaloop/project/issues/364))
-- [ ] Test impact of Java vs Node (Ref: [Story #369](https://github.com/mojaloop/project/issues/369))
-- [ ] Test impact of a managed Kafka Broker (remove any possible limitation or bottlenecks from self-hosted deployments)
-- [ ] Implement native Kafka EOS capabilities once it has been introduced to NodeJs Kafka libraries (Ref: [Story #368](https://github.com/mojaloop/project/issues/368))
+- Test impact of Batch Processing on Mojaloop Golden-path Transfer-prepare (Ref: [Story #362](https://github.com/mojaloop/project/issues/362))
+- Test impact of multi-threaded processing of messages on non-position consumers on Mojaloop Golden-path Transfer-prepare (Ref: [Story #366](https://github.com/mojaloop/project/issues/366))
+- ~~Test impact of increased affinity on non-position consumers on Mojaloop Golden-path Transfer-prepare~~ (Ref: [Story #364](https://github.com/mojaloop/project/issues/364))
+- Test impact of Java vs Node (Ref: [Story #369](https://github.com/mojaloop/project/issues/369))
+- Test impact of a managed Kafka Broker (remove any possible limitation or bottlenecks from self-hosted deployments)
+- Implement native Kafka EOS capabilities once it has been introduced to NodeJs Kafka libraries (Ref: [Story #368](https://github.com/mojaloop/project/issues/368))
 New:
-- [ ] May need to re-test the different values for the recommended config for high Affinity 
+- May need to re-test the different values for the recommended config for high Affinity 
 
 ### Outcomes:
-- TBC
+- Implement Recommendations and Findings in PI3.3 [Story #371 - Kafka Performance Issue Analysis & Investigation - Implement findings and recommendations as of PI3.2](https://github.com/mojaloop/project/issues/371). Note the auto-commit changes will be moved to a future story.
 
 ## Impact to Metrics
 Results taken from perf-test-02 on AWS tests. (Ref: [20180727](../20180727), [20180718T17h46 - Perf-test-02](../20180718-perf-test-02))
