@@ -1,0 +1,20 @@
+2018-07-27T10:45:30.783Z - [32minfo[39m: Handler Setup - Registering {"type":"prepare","enabled":true,"fspList":["dfsp2"]}!
+2018-07-27T10:45:30.784Z - [32minfo[39m: Registering prepareHandler for Participant: dfsp2
+2018-07-27T10:45:30.991Z - [32minfo[39m: node-rdkafka v0.11.4 ready - {"name":"topic-dfsp2-transfer-prepare#consumer-1"}
+2018-07-27T10:45:30.991Z - [32minfo[39m: start[1532688330786] time[205] tag[metricConsumerConnectProcessingTime]
+2018-07-27T10:45:30.993Z - [32minfo[39m: CreateHandle::connect successful topic: topic-dfsp2-transfer-prepare
+2018-07-27T10:45:30.995Z - [32minfo[39m: start[1532688330995] time[0] tag[metricConsumeRecursiveProcessingTime]
+2018-07-27T10:45:30.995Z - [32minfo[39m: start[1532688330994] time[1] tag[metricConsumeProcessingTime]
+2018-07-27T10:45:30.996Z - [32minfo[39m: start[1532688330786] time[210] tag[metricCenLedgerCreateHandler]
+2018-07-27T10:45:30.996Z - [32minfo[39m: start[1532688330784] time[212] tag[metricCenLedgerCreatePrepareHandler]
+2018-07-27T10:45:30.996Z - [32minfo[39m: start[1532688330784] time[212] tag[metricCenLedgerCreatePrepareHandler]
+2018-07-27T10:45:32.095Z - [32minfo[39m: start[1532688332095] time[0] tag[metricConsumeRecursiveProcessingTime]
+2018-07-27T10:45:33.886Z - [32minfo[39m: start[1532688333886] time[0] tag[metricConsumeRecursiveProcessingTime]
+2018-07-27T10:45:34.986Z - [32minfo[39m: start[1532688334986] time[0] tag[metricConsumeRecursiveProcessingTime]
+2018-07-27T10:45:36.086Z - [32minfo[39m: start[1532688336086] time[0] tag[metricConsumeRecursiveProcessingTime]
+2018-07-27T10:45:37.185Z - [32minfo[39m: start[1532688337185] time[0] tag[metricConsumeRecursiveProcessingTime]
+2018-07-27T10:45:38.284Z - [32minfo[39m: start[1532688338284] time[0] tag[metricConsumeRecursiveProcessingTime]
+2018-07-27T10:45:39.384Z - [32minfo[39m: start[1532688339384] time[0] tag[metricConsumeRecursiveProcessingTime]
+2018-07-27T10:45:40.486Z - [32minfo[39m: start[1532688340486] time[0] tag[metricConsumeRecursiveProcessingTime]
+2018-07-27T10:45:41.586Z - [32minfo[39m: start[1532688341586] time[0] tag[metricConsumeRecursiveProcessingTime]
+2018-07-27T10:45:42.685Z - [32minfo[39m: start[1532688342685] time[0] tag[metricConsumeRecursiveProcessingTime]

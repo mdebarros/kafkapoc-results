@@ -1,0 +1,78 @@
+http://ip-10-3-2-158:4000
+  GET              /                              Metadata
+  GET              /documentation                 
+  GET              /health                        Status of adapter
+  GET              /swagger.json                  
+  GET              /swaggerui/{path*}             
+  GET              /swaggerui/extend.js           
+  POST             /transfers                     Transfer API.
+  PUT              /transfers/{id}                Fulfil a transfer
+
+2018-07-27T10:38:03.636Z - [34mdebug[39m: Server running at:  http://ip-10-3-2-158:4000
+2018-07-27T10:38:03.638Z - [32minfo[39m: Notification::startConsumer
+2018-07-27T10:38:03.640Z - [32minfo[39m: Notification::startConsumer::topicName: topic-notification-event
+2018-07-27T10:38:03.641Z - [32minfo[39m: Notification::startConsumer::Consumer: new
+2018-07-27T10:38:03.847Z - [32minfo[39m: node-rdkafka v0.11.4 ready - {"name":"topic-notification-event#consumer-1"}
+2018-07-27T10:38:03.848Z - [32minfo[39m: start[1532687883641] time[206] tag[metricConsumerConnectProcessingTime]
+2018-07-27T10:38:03.850Z - [32minfo[39m: Kafka Consumer connected
+2018-07-27T10:38:03.851Z - [32minfo[39m: start[1532687883851] time[0] tag[metricConsumeRecursiveProcessingTime]
+2018-07-27T10:38:03.851Z - [32minfo[39m: start[1532687883850] time[1] tag[metricConsumeProcessingTime]
+2018-07-27T10:38:03.851Z - [32minfo[39m: Kafka Consumer handler created
+2018-07-27T10:38:03.851Z - [32minfo[39m: start[1532687883638] time[213] tag[metricMlAPIStartConsume]
+2018-07-27T10:38:04.958Z - [32minfo[39m: start[1532687884958] time[0] tag[metricConsumeRecursiveProcessingTime]
+2018-07-27T10:38:06.058Z - [32minfo[39m: start[1532687886058] time[0] tag[metricConsumeRecursiveProcessingTime]
+2018-07-27T10:38:07.158Z - [32minfo[39m: start[1532687887158] time[0] tag[metricConsumeRecursiveProcessingTime]
+2018-07-27T10:38:08.258Z - [32minfo[39m: start[1532687888257] time[0] tag[metricConsumeRecursiveProcessingTime]
+2018-07-27T10:38:09.357Z - [32minfo[39m: start[1532687889357] time[0] tag[metricConsumeRecursiveProcessingTime]
+2018-07-27T10:38:10.457Z - [32minfo[39m: start[1532687890457] time[0] tag[metricConsumeRecursiveProcessingTime]
+2018-07-27T10:38:11.557Z - [32minfo[39m: start[1532687891557] time[0] tag[metricConsumeRecursiveProcessingTime]
+2018-07-27T10:38:12.657Z - [32minfo[39m: start[1532687892657] time[0] tag[metricConsumeRecursiveProcessingTime]
+2018-07-27T10:38:13.758Z - [32minfo[39m: start[1532687893758] time[0] tag[metricConsumeRecursiveProcessingTime]
+2018-07-27T10:38:14.860Z - [32minfo[39m: start[1532687894859] time[0] tag[metricConsumeRecursiveProcessingTime]
+2018-07-27T10:38:15.961Z - [32minfo[39m: start[1532687895961] time[0] tag[metricConsumeRecursiveProcessingTime]
+2018-07-27T10:38:17.061Z - [32minfo[39m: start[1532687897060] time[0] tag[metricConsumeRecursiveProcessingTime]
+2018-07-27T10:38:18.160Z - [32minfo[39m: start[1532687898160] time[0] tag[metricConsumeRecursiveProcessingTime]
+2018-07-27T10:38:19.260Z - [32minfo[39m: start[1532687899260] time[0] tag[metricConsumeRecursiveProcessingTime]
+2018-07-27T10:38:20.362Z - [32minfo[39m: start[1532687900362] time[0] tag[metricConsumeRecursiveProcessingTime]
+2018-07-27T10:38:21.467Z - [32minfo[39m: start[1532687901467] time[0] tag[metricConsumeRecursiveProcessingTime]
+2018-07-27T10:38:22.567Z - [32minfo[39m: start[1532687902567] time[0] tag[metricConsumeRecursiveProcessingTime]
+2018-07-27T10:38:23.667Z - [32minfo[39m: start[1532687903667] time[0] tag[metricConsumeRecursiveProcessingTime]
+2018-07-27T10:38:24.767Z - [32minfo[39m: start[1532687904767] time[0] tag[metricConsumeRecursiveProcessingTime]
+2018-07-27T10:38:25.867Z - [32minfo[39m: start[1532687905866] time[0] tag[metricConsumeRecursiveProcessingTime]
+2018-07-27T10:38:26.966Z - [32minfo[39m: start[1532687906966] time[0] tag[metricConsumeRecursiveProcessingTime]
+2018-07-27T10:38:27.414Z - [34mdebug[39m: create::start({"transferId":"93433d45-2b5c-403d-b9d7-a1c0ff973394","payeeFsp":"dfsp2","payerFsp":"dfsp1","amount":{"amount":"100","currency":"USD"},"ilpPacket":"AQAAAAAAAABkEGcuZXdwMjEuaWQuODAwMjCCAhd7InRyYW5zYWN0aW9uSWQiOiJmODU0NzdkYi0xMzVkLTRlMDgtYThiNy0xMmIyMmQ4MmMwZDYiLCJxdW90ZUlkIjoiOWU2NGYzMjEtYzMyNC00ZDI0LTg5MmYtYzQ3ZWY0ZThkZTkxIiwicGF5ZWUiOnsicGFydHlJZEluZm8iOnsicGFydHlJZFR5cGUiOiJNU0lTRE4iLCJwYXJ0eUlkZW50aWZpZXIiOiIyNTYxMjM0NTYiLCJmc3BJZCI6IjIxIn19LCJwYXllciI6eyJwYXJ0eUlkSW5mbyI6eyJwYXJ0eUlkVHlwZSI6Ik1TSVNETiIsInBhcnR5SWRlbnRpZmllciI6IjI1NjIwMTAwMDAxIiwiZnNwSWQiOiIyMCJ9LCJwZXJzb25hbEluZm8iOnsiY29tcGxleE5hbWUiOnsiZmlyc3ROYW1lIjoiTWF0cyIsImxhc3ROYW1lIjoiSGFnbWFuIn0sImRhdGVPZkJpcnRoIjoiMTk4My0xMC0yNSJ9fSwiYW1vdW50Ijp7ImFtb3VudCI6IjEwMCIsImN1cnJlbmN5IjoiVVNEIn0sInRyYW5zYWN0aW9uVHlwZSI6eyJzY2VuYXJpbyI6IlRSQU5TRkVSIiwiaW5pdGlhdG9yIjoiUEFZRVIiLCJpbml0aWF0b3JUeXBlIjoiQ09OU1VNRVIifSwibm90ZSI6ImhlaiJ9","condition":"uU0nuZNNPgilLlLX2n2r-sSE7-N6U4DukIj3rOLvzek","expiration":"2018-11-08T21:31:00.534+01:00"})
+2018-07-27T10:38:27.415Z - [32minfo[39m: guid=93433d45-2b5c-403d-b9d7-a1c0ff973394:uuid - startTransferPrepareAPI:process
+2018-07-27T10:38:27.424Z - [34mdebug[39m: prepare::start([object Object], [object Object])
+2018-07-27T10:38:27.425Z - [34mdebug[39m: Producer::start::topic=topic-dfsp1-transfer-prepare
+2018-07-27T10:38:27.426Z - [34mdebug[39m: Producer::connect::start
+2018-07-27T10:38:27.445Z - [32minfo[39m: start[1532687907426] time[19] tag[metricProducerConnectProcessingTime]
+2018-07-27T10:38:27.445Z - [34mdebug[39m: Producer::connect::end
+2018-07-27T10:38:27.445Z - [34mdebug[39m: Producer.sendMessage:: messageProtocol:'{"id":"93433d45-2b5c-403d-b9d7-a1c0ff973394","to":"dfsp2","from":"dfsp1","type":"application/json","content":{"headers":{"content-type":"application/json","date":"2017-11-02T00:00:00.000Z","fspiop-destination":"dfsp2","fspiop-source":"dfsp1","content-length":1049},"payload":{"transferId":"93433d45-2b5c-403d-b9d7-a1c0ff973394","payeeFsp":"dfsp2","payerFsp":"dfsp1","amount":{"amount":"100","currency":"USD"},"ilpPacket":"AQAAAAAAAABkEGcuZXdwMjEuaWQuODAwMjCCAhd7InRyYW5zYWN0aW9uSWQiOiJmODU0NzdkYi0xMzVkLTRlMDgtYThiNy0xMmIyMmQ4MmMwZDYiLCJxdW90ZUlkIjoiOWU2NGYzMjEtYzMyNC00ZDI0LTg5MmYtYzQ3ZWY0ZThkZTkxIiwicGF5ZWUiOnsicGFydHlJZEluZm8iOnsicGFydHlJZFR5cGUiOiJNU0lTRE4iLCJwYXJ0eUlkZW50aWZpZXIiOiIyNTYxMjM0NTYiLCJmc3BJZCI6IjIxIn19LCJwYXllciI6eyJwYXJ0eUlkSW5mbyI6eyJwYXJ0eUlkVHlwZSI6Ik1TSVNETiIsInBhcnR5SWRlbnRpZmllciI6IjI1NjIwMTAwMDAxIiwiZnNwSWQiOiIyMCJ9LCJwZXJzb25hbEluZm8iOnsiY29tcGxleE5hbWUiOnsiZmlyc3ROYW1lIjoiTWF0cyIsImxhc3ROYW1lIjoiSGFnbWFuIn0sImRhdGVPZkJpcnRoIjoiMTk4My0xMC0yNSJ9fSwiYW1vdW50Ijp7ImFtb3VudCI6IjEwMCIsImN1cnJlbmN5IjoiVVNEIn0sInRyYW5zYWN0aW9uVHlwZSI6eyJzY2VuYXJpbyI6IlRSQU5TRkVSIiwiaW5pdGlhdG9yIjoiUEFZRVIiLCJpbml0aWF0b3JUeXBlIjoiQ09OU1VNRVIifSwibm90ZSI6ImhlaiJ9","condition":"uU0nuZNNPgilLlLX2n2r-sSE7-N6U4DukIj3rOLvzek","expiration":"2018-11-08T21:31:00.534+01:00"}},"metadata":{"event":{"id":"ed677036-62d0-4049-a641-4baeb68226a4","type":"prepare","action":"prepare","createdAt":"2018-07-27T10:38:27.424Z","state":{"status":"success","code":0}}}}'
+2018-07-27T10:38:27.446Z - [34mdebug[39m: Producer::send() - start {"topicName":"topic-dfsp1-transfer-prepare"}
+2018-07-27T10:38:27.446Z - [32minfo[39m: start[1532687907446] time[0] tag[metricProducerSendMessageProcessingTime]
+2018-07-27T10:38:27.446Z - [34mdebug[39m: Producer::end
+2018-07-27T10:38:27.446Z - [32minfo[39m: start[1532687907424] time[22] tag[metricMlAPIRoutePrepare]
+2018-07-27T10:38:27.446Z - [32minfo[39m: guid=93433d45-2b5c-403d-b9d7-a1c0ff973394:uuid - endTransferPrepareAPI:process
+2018-07-27T10:38:28.066Z - [32minfo[39m: start[1532687908065] time[0] tag[metricConsumeRecursiveProcessingTime]
+2018-07-27T10:38:29.165Z - [32minfo[39m: start[1532687909165] time[0] tag[metricConsumeRecursiveProcessingTime]
+2018-07-27T10:38:29.362Z - [34mdebug[39m: Consumer::_consumerRecursive() - messages[1]: [{"value":{"from":"dfsp1","to":"dfsp2","id":"93433d45-2b5c-403d-b9d7-a1c0ff973394","content":{"headers":{"content-type":"application/json","date":"2017-11-02T00:00:00.000Z","fspiop-destination":"dfsp2","fspiop-source":"dfsp1","content-length":1049},"payload":{"transferId":"93433d45-2b5c-403d-b9d7-a1c0ff973394","payeeFsp":"dfsp2","payerFsp":"dfsp1","amount":{"amount":"100","currency":"USD"},"ilpPacket":"AQAAAAAAAABkEGcuZXdwMjEuaWQuODAwMjCCAhd7InRyYW5zYWN0aW9uSWQiOiJmODU0NzdkYi0xMzVkLTRlMDgtYThiNy0xMmIyMmQ4MmMwZDYiLCJxdW90ZUlkIjoiOWU2NGYzMjEtYzMyNC00ZDI0LTg5MmYtYzQ3ZWY0ZThkZTkxIiwicGF5ZWUiOnsicGFydHlJZEluZm8iOnsicGFydHlJZFR5cGUiOiJNU0lTRE4iLCJwYXJ0eUlkZW50aWZpZXIiOiIyNTYxMjM0NTYiLCJmc3BJZCI6IjIxIn19LCJwYXllciI6eyJwYXJ0eUlkSW5mbyI6eyJwYXJ0eUlkVHlwZSI6Ik1TSVNETiIsInBhcnR5SWRlbnRpZmllciI6IjI1NjIwMTAwMDAxIiwiZnNwSWQiOiIyMCJ9LCJwZXJzb25hbEluZm8iOnsiY29tcGxleE5hbWUiOnsiZmlyc3ROYW1lIjoiTWF0cyIsImxhc3ROYW1lIjoiSGFnbWFuIn0sImRhdGVPZkJpcnRoIjoiMTk4My0xMC0yNSJ9fSwiYW1vdW50Ijp7ImFtb3VudCI6IjEwMCIsImN1cnJlbmN5IjoiVVNEIn0sInRyYW5zYWN0aW9uVHlwZSI6eyJzY2VuYXJpbyI6IlRSQU5TRkVSIiwiaW5pdGlhdG9yIjoiUEFZRVIiLCJpbml0aWF0b3JUeXBlIjoiQ09OU1VNRVIifSwibm90ZSI6ImhlaiJ9","condition":"uU0nuZNNPgilLlLX2n2r-sSE7-N6U4DukIj3rOLvzek","expiration":"2018-11-08T21:31:00.534+01:00"}},"type":"application/json","metadata":{"event":{"id":"67d63d68-7a03-4227-be15-4da64f69e336","type":"notification","action":"prepare","createdAt":"2018-07-27T10:38:27.424Z","state":{"status":"success","code":0,"description":"action successful"},"responseTo":"e057ed45-9808-4c66-ba14-e3055c7943f3"},"protocol.createdAt":1532687909168}},"size":1587,"key":{"type":"Buffer","data":[56,49,54,102,52,55,54,99,45,56,52,101,50,45,52,100,57,101,45,98,51,54,55,45,98,98,98,99,102,56,49,49,100,101,57,57]},"topic":"topic-notification-event","offset":3200,"partition":0,"timestamp":1532687909168}]}
+2018-07-27T10:38:29.363Z - [32minfo[39m: start[1532687909165] time[1] tag[metricConsumeRecursiveConsumeProcessingTime]
+2018-07-27T10:38:29.364Z - [34mdebug[39m: Consumer::consume() - Sync Process - {"error":null,"messages":[{"value":{"from":"dfsp1","to":"dfsp2","id":"93433d45-2b5c-403d-b9d7-a1c0ff973394","content":{"headers":{"content-type":"application/json","date":"2017-11-02T00:00:00.000Z","fspiop-destination":"dfsp2","fspiop-source":"dfsp1","content-length":1049},"payload":{"transferId":"93433d45-2b5c-403d-b9d7-a1c0ff973394","payeeFsp":"dfsp2","payerFsp":"dfsp1","amount":{"amount":"100","currency":"USD"},"ilpPacket":"AQAAAAAAAABkEGcuZXdwMjEuaWQuODAwMjCCAhd7InRyYW5zYWN0aW9uSWQiOiJmODU0NzdkYi0xMzVkLTRlMDgtYThiNy0xMmIyMmQ4MmMwZDYiLCJxdW90ZUlkIjoiOWU2NGYzMjEtYzMyNC00ZDI0LTg5MmYtYzQ3ZWY0ZThkZTkxIiwicGF5ZWUiOnsicGFydHlJZEluZm8iOnsicGFydHlJZFR5cGUiOiJNU0lTRE4iLCJwYXJ0eUlkZW50aWZpZXIiOiIyNTYxMjM0NTYiLCJmc3BJZCI6IjIxIn19LCJwYXllciI6eyJwYXJ0eUlkSW5mbyI6eyJwYXJ0eUlkVHlwZSI6Ik1TSVNETiIsInBhcnR5SWRlbnRpZmllciI6IjI1NjIwMTAwMDAxIiwiZnNwSWQiOiIyMCJ9LCJwZXJzb25hbEluZm8iOnsiY29tcGxleE5hbWUiOnsiZmlyc3ROYW1lIjoiTWF0cyIsImxhc3ROYW1lIjoiSGFnbWFuIn0sImRhdGVPZkJpcnRoIjoiMTk4My0xMC0yNSJ9fSwiYW1vdW50Ijp7ImFtb3VudCI6IjEwMCIsImN1cnJlbmN5IjoiVVNEIn0sInRyYW5zYWN0aW9uVHlwZSI6eyJzY2VuYXJpbyI6IlRSQU5TRkVSIiwiaW5pdGlhdG9yIjoiUEFZRVIiLCJpbml0aWF0b3JUeXBlIjoiQ09OU1VNRVIifSwibm90ZSI6ImhlaiJ9","condition":"uU0nuZNNPgilLlLX2n2r-sSE7-N6U4DukIj3rOLvzek","expiration":"2018-11-08T21:31:00.534+01:00"}},"type":"application/json","metadata":{"event":{"id":"67d63d68-7a03-4227-be15-4da64f69e336","type":"notification","action":"prepare","createdAt":"2018-07-27T10:38:27.424Z","state":{"status":"success","code":0,"description":"action successful"},"responseTo":"e057ed45-9808-4c66-ba14-e3055c7943f3"},"protocol.createdAt":1532687909168}},"size":1587,"key":{"type":"Buffer","data":[56,49,54,102,52,55,54,99,45,56,52,101,50,45,52,100,57,101,45,98,51,54,55,45,98,98,98,99,102,56,49,49,100,101,57,57]},"topic":"topic-notification-event","offset":3200,"partition":0,"timestamp":1532687909168}]}
+2018-07-27T10:38:29.364Z - [32minfo[39m: Notification::consumeMessage
+2018-07-27T10:38:29.364Z - [32minfo[39m: Notification:consumeMessage message: - [{"value":{"from":"dfsp1","to":"dfsp2","id":"93433d45-2b5c-403d-b9d7-a1c0ff973394","content":{"headers":{"content-type":"application/json","date":"2017-11-02T00:00:00.000Z","fspiop-destination":"dfsp2","fspiop-source":"dfsp1","content-length":1049},"payload":{"transferId":"93433d45-2b5c-403d-b9d7-a1c0ff973394","payeeFsp":"dfsp2","payerFsp":"dfsp1","amount":{"amount":"100","currency":"USD"},"ilpPacket":"AQAAAAAAAABkEGcuZXdwMjEuaWQuODAwMjCCAhd7InRyYW5zYWN0aW9uSWQiOiJmODU0NzdkYi0xMzVkLTRlMDgtYThiNy0xMmIyMmQ4MmMwZDYiLCJxdW90ZUlkIjoiOWU2NGYzMjEtYzMyNC00ZDI0LTg5MmYtYzQ3ZWY0ZThkZTkxIiwicGF5ZWUiOnsicGFydHlJZEluZm8iOnsicGFydHlJZFR5cGUiOiJNU0lTRE4iLCJwYXJ0eUlkZW50aWZpZXIiOiIyNTYxMjM0NTYiLCJmc3BJZCI6IjIxIn19LCJwYXllciI6eyJwYXJ0eUlkSW5mbyI6eyJwYXJ0eUlkVHlwZSI6Ik1TSVNETiIsInBhcnR5SWRlbnRpZmllciI6IjI1NjIwMTAwMDAxIiwiZnNwSWQiOiIyMCJ9LCJwZXJzb25hbEluZm8iOnsiY29tcGxleE5hbWUiOnsiZmlyc3ROYW1lIjoiTWF0cyIsImxhc3ROYW1lIjoiSGFnbWFuIn0sImRhdGVPZkJpcnRoIjoiMTk4My0xMC0yNSJ9fSwiYW1vdW50Ijp7ImFtb3VudCI6IjEwMCIsImN1cnJlbmN5IjoiVVNEIn0sInRyYW5zYWN0aW9uVHlwZSI6eyJzY2VuYXJpbyI6IlRSQU5TRkVSIiwiaW5pdGlhdG9yIjoiUEFZRVIiLCJpbml0aWF0b3JUeXBlIjoiQ09OU1VNRVIifSwibm90ZSI6ImhlaiJ9","condition":"uU0nuZNNPgilLlLX2n2r-sSE7-N6U4DukIj3rOLvzek","expiration":"2018-11-08T21:31:00.534+01:00"}},"type":"application/json","metadata":{"event":{"id":"67d63d68-7a03-4227-be15-4da64f69e336","type":"notification","action":"prepare","createdAt":"2018-07-27T10:38:27.424Z","state":{"status":"success","code":0,"description":"action successful"},"responseTo":"e057ed45-9808-4c66-ba14-e3055c7943f3"},"protocol.createdAt":1532687909168}},"size":1587,"key":{"type":"Buffer","data":[56,49,54,102,52,55,54,99,45,56,52,101,50,45,52,100,57,101,45,98,51,54,55,45,98,98,98,99,102,56,49,49,100,101,57,57]},"topic":"topic-notification-event","offset":3200,"partition":0,"timestamp":1532687909168}]
+2018-07-27T10:38:29.365Z - [32minfo[39m: guid=93433d45-2b5c-403d-b9d7-a1c0ff973394:uuid - startNotificationHandler:process
+2018-07-27T10:38:29.365Z - [32minfo[39m: Notification::consumeMessage::processMessage
+2018-07-27T10:38:29.365Z - [32minfo[39m: Notification::processMessage
+2018-07-27T10:38:29.365Z - [32minfo[39m: Notification::processMessage action: prepare
+2018-07-27T10:38:29.365Z - [32minfo[39m: Notification::processMessage status: success
+2018-07-27T10:38:29.371Z - [32minfo[39m: start[1532687909364] time[7] tag[metricConsumeSyncQueueProcessingTime]
+2018-07-27T10:38:29.393Z - [32minfo[39m: start[1532687909365] time[28] tag[metricMlAPIProcessMessage]
+2018-07-27T10:38:29.397Z - [32minfo[39m: start[1532687909393] time[4] tag[metricCommitMessageSyncProcessingTime]
+2018-07-27T10:38:29.397Z - [32minfo[39m: guid=93433d45-2b5c-403d-b9d7-a1c0ff973394:uuid - endNotificationHandler:process
+2018-07-27T10:38:29.397Z - [32minfo[39m: start[1532687909364] time[32] tag[metricMlAPIConsumeMessageForEachMsg]
+2018-07-27T10:38:29.398Z - [32minfo[39m: start[1532687909364] time[34] tag[metricMlAPIConsumeMessage]
+2018-07-27T10:38:29.399Z - [32minfo[39m: start[1532687909399] time[0] tag[metricConsumeRecursiveProcessingTime]
+2018-07-27T10:38:29.399Z - [32minfo[39m: start[1532687909398] time[1] tag[metricConsumeSyncQueueResolveProcessingTime]
+2018-07-27T10:38:30.499Z - [32minfo[39m: start[1532687910499] time[0] tag[metricConsumeRecursiveProcessingTime]
+2018-07-27T10:38:31.599Z - [32minfo[39m: start[1532687911599] time[0] tag[metricConsumeRecursiveProcessingTime]
+2018-07-27T10:38:32.700Z - [32minfo[39m: start[1532687912700] time[0] tag[metricConsumeRecursiveProcessingTime]
