@@ -283,7 +283,7 @@ Label | # Samples | Average | Min | Max | Std. Dev. | Error % | Throughput | Rec
 HTTP Request | 100 | 9 | 3 | 77 | 8.66 | 0.000% | 52.63158 | 6.68 | 68.82 | 130.0
 TOTAL | 100 | 9 | 3 | 77 | 8.66 | 0.000% | 52.63158 | 6.68 | 68.82 | 130.0
 
-## Use Case Base 3 - 100 messages with Auto-commit disabled + manual commits enabled + Producer fix
+## Use Case 3 - 100 messages with Auto-commit disabled + manual commits enabled + Producer fix
  
 ### Testing Parameters:
 - Producer Fix: true
